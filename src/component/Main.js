@@ -3,7 +3,7 @@ import React from 'react';
 function Main(props) {
     return (
         <div>
-            메인입니다.
+            {props.datasrc.user_review[0].review_index}
         </div>
     );
 }
