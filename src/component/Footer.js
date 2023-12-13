@@ -1,9 +1,12 @@
 import React from 'react';
+import End from './pjh/End'
 
 function Footer(props) {
     return (
         <div>
-            푸터입니다.
+           
+        <End data = {props}></End>
+
         </div>
     );
 }

@@ -2,3 +2,8 @@
     font-family: "Nanum Gothic";
     font-weight: 400;
 }
+
+.personalColor {
+    color: #B8FBFF;
+    /* 로고 색상과 동일. */
+}
