@@ -1,0 +1,602 @@
+/////////////////////////////////////////////////////////////////
+// common //
+/////////////////////////////////////////////////////////////////
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#hd,
+#mainSwiper,
+#customForm,
+#businessPartners,
+#quickMenu,
+#footer {
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .posFixed {
+        position: fixed;
+    }
+
+    .posAbs {
+        position: absolute;
+    }
+
+    .posRel {
+        position: relative;
+    }
+
+    .dpFlex {
+        display: flex;
+    }
+
+    .dpBlock {
+        display: block;
+    }
+
+    .jcb {
+        justify-content: space-between;
+    }
+
+    .jcc {
+        justify-content: center;
+    }
+
+    .aic {
+        align-items: center;
+    }
+
+    .container {
+        margin: auto;
+        width: 1400px;
+    }
+
+    .height100 {
+        height: 100px;
+    }
+
+    .flexDirCol {
+        flex-direction: column;
+    }
+
+    .flexDirRow {
+        flex-direction: row;
+    }
+}
+
+/////////////////////////////////////////////////////////////////
+// layout //
+/////////////////////////////////////////////////////////////////
+
+#hd {
+
+    .topAd {
+        width: 100%;
+        height: 50px;
+
+        top: 0;
+
+        text-align: center;
+        background-color: #ede0cb;
+
+        font-size: large;
+
+        z-index: 10000000;
+
+        a {
+            color: black;
+        }
+    }
+
+    .topBanner {
+        margin: auto;
+
+        top: 50px;
+
+        height: 100px;
+
+        padding: 0 2%;
+
+        background-color: #f04e21;
+
+        img {
+            width: 80px;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 30px;
+            border: white;
+            margin-right: 5px;
+        }
+    }
+
+    .topOption {
+        margin-right: 20px;
+    }
+
+    .topMenu {
+
+        top: 50px;
+        margin: auto;
+        height: 100px;
+
+        border-bottom: 3px solid #f04e21;
+
+        li {
+            padding-right: 30px;
+        }
+
+        .depth1ul {
+            margin-bottom: 0;
+
+            :hover .depth2ul {
+                height: 150px;
+                background-color: #f04e21;
+            }
+
+        }
+
+        .depth1a {
+            line-height: 100px;
+        }
+
+        .depth2ul {
+            line-height: 50px;
+            top: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            z-index: 100;
+        }
+
+
+
+    }
+}
+
+
+#mainSwiper {
+
+    position: relative;
+    top: 100px;
+    height: 800px;
+
+    .swiper-slide {
+        height: 0;
+        padding-top: 43%;
+        /* width 100% 조건이 내장되어야 한다  */
+        /* 화면 사이즈에 맞게 해상도를 자동 조절시키기 위해 bground-image 태그를 사용
+        height 0 으로 주고, padding-top 요소를 사용하여 이미지의 height 백분율을 계산하여 % 로 넣어준다 */
+
+        background-position: 85% center;
+        background-size: 45%;
+        background-color: white;
+        background-repeat: no-repeat;
+
+    }
+
+    .mainSwiperTitle {
+        left: 20%;
+        top: 30%;
+        font-family: "Pretendard-Black";
+        font-size: 2rem;
+    }
+
+    .mainSwiperImg1 {
+        background-image: url(https://www.carryboxstorage.com/img/visual01.a3a52f16.svg);
+    }
+
+
+    .mainSwiperImg2 {
+        // background-image: url(https://www.carryboxstorage.com/img/visual02.abf61164.svg);
+        background-image: url(https://www.lugstay.com/img/app-device-new.png);
+        background-size: 30%;
+    }
+
+    .mainSwiperImg3 {
+        background-image: url(https://www.carryboxstorage.com/img/visual03.2f02c466.svg);
+        background-size: 40%;
+
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 50px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #f04e21;
+    }
+
+    .mainSwiperButton {
+        color: #f04e21 !important;
+
+
+        * {
+            color: inherit;
+            --swiper-navigation-size: 75px;
+        }
+    }
+
+}
+
+#customForm {
+
+    // background-color: #f04e21;
+
+    padding: 5rem 0 10.5rem;
+
+    // margin-bottom: 100px;
+
+    .customFormTitle {
+
+        padding-top: 20px;
+
+        text-align: center;
+
+        height: 100px;
+
+        color: #f04e21;
+    }
+
+
+
+    .customForm {
+        width: 100%;
+        height: 400px;
+        // background-color: #f04e21;
+        // border-radius: 50px;
+        // border: 7px solid #f04e21;
+
+
+
+        .essential {
+            margin-left: 0;
+            font-size: 1.6rem;
+            font-size: medium;
+        }
+
+        sup {
+            color: #f04e21;
+            font-size: medium;
+        }
+
+
+
+        .formRow {
+            row-gap: 5 px;
+
+            margin-bottom: 30px;
+        }
+
+        .formColumn {
+            margin-right: 50px;
+
+            input[type='text'] {
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+        }
+
+        .formBtn {
+
+            button {
+                width: 20rem;
+                height: 3rem;
+
+                background-color: #f04e21;
+                color: white;
+
+                border-radius: 8px;
+                border: transparent;
+            }
+
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+
+    }
+}
+
+.formAction {
+    .form__title {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h2 {
+            font-size: 36px;
+            font-family: 'Pretendard';
+            font-weight: 700;
+            color: #f98908;
+            padding-bottom: 20px;
+        }
+    }
+
+    .form__wrapper {
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            fieldset {
+                display: none;
+            }
+
+            div {
+                padding-right: 50px;
+                padding-bottom: 30px;
+
+                label,
+                input {
+                    display: block;
+                }
+
+                label {
+                    padding-bottom: 10px;
+                }
+
+                input {
+                    height: 35px;
+                }
+
+                select {
+                    width: 200px;
+                }
+
+                select:focus {
+                    border: none;
+                }
+
+                &:nth-of-type(3) {
+                    input {
+                        display: inline-block;
+                        width: 50px;
+
+                        &:not(:last-of-type)::after {
+                            content: '-';
+                        }
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                }
+
+                input[type="submit"] {
+                    background-image: linear-gradient(270deg, #FAFF03 23.29%, #FF8A00 67.3%);
+                    border: none;
+                    padding: 0 100px;
+                    border-radius: 30px;
+                    color: white;
+
+                }
+            }
+        }
+    }
+}
+
+#businessPartners {
+    position: relative;
+    width: 100%;
+
+    .partnersTitle {
+        text-align: center;
+        color: #f04e21;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+
+    .swiper-slide {
+        height: 0;
+        // padding-top: 41%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+
+    }
+
+    .partnerLogo1 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-mss.png);
+        // background-image: url(https://cdn.myzzym.com/myzzym/images/icon/partnersbi/11-gacheegongan.png);
+    }
+
+    .partnerLogo2 {
+        background-image: url(https://www.lugstay.com/img/main-partners-hub.png);
+    }
+
+    .partnerLogo3 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-kto.png);
+    }
+
+    .partnerLogo4 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-sto.png);
+
+    }
+
+    .partnerLogo5 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-incheon-airport.png);
+    }
+
+    .partnerLogo6 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-sk-telecom.png);
+    }
+
+
+}
+
+#quickMenu {
+
+
+    .quickMenu {
+        right: 10%;
+        bottom: 10%;
+
+        z-index: 1000000;
+    }
+
+    .linkPhone {
+        width: 50px;
+        height: 50px;
+        background-color: #f04e21;
+
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 3rem;
+
+        // 카카오톡 상담 아이콘과 간격 조절
+        margin-bottom: 10px;
+
+        z-index: 1000000;
+    }
+
+    .linkKaKaoTalk {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 3rem;
+
+        z-index: 1000000;
+    }
+
+
+}
+
+#footer {
+
+    background-color: #101010;
+
+    color: white;
+
+    .footer {
+
+        width: 100%;
+        height: 350px;
+
+        bottom: 0;
+        left: 0;
+
+        .companyInfo {
+
+            ul {
+
+                line-height: 2rem;
+                color: rgb(153, 153, 153);
+
+                .companyName {
+
+                    line-height: 7rem;
+                    font-size: 30px;
+                    color: #f04e21;
+
+                }
+
+                .termOfUse {
+                    line-height: 3rem;
+                    color: black;
+                }
+
+            }
+
+        }
+
+        .customerService {
+
+            .bi-youtube {
+                color: red;
+                font-size: xx-large;
+
+            }
+
+            .bi-twitter {
+                color: #00acee;
+                font-size: xx-large;
+
+                margin-left: 5%;
+            }
+
+            .bi-instagram {
+                color: #dc143c;
+                font-size: xx-large;
+
+                margin-left: 5%;
+            }
+
+            .csCenter {
+                font-size: 30px;
+                line-height: 5rem;
+
+                // color: #f04e21;
+            }
+
+            .csNumber {
+                line-height: 3rem;
+                font-size: 30px;
+
+                color: #f04e21;
+            }
+
+            .hoursOfUse {
+
+                margin-top: 50px;
+            }
+
+        }
+
+    }
+
+}
+
+/////////////////////////////////////////////////////////////////
+// @media //
+/////////////////////////////////////////////////////////////////
+
+@media (max-width: 800px) {
+    #hd {
+
+        h3 {
+            font-size: 1.0rem;
+        }
+    }
+
+    #quickMenu {
+        .quickMenu {
+
+            display: flex;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .linkPhone,
+            .linkKaKaoTalk {
+                width: 50vw;
+                border-radius: 0;
+            }
+        }
+    }
+}

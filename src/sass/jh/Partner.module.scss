@@ -1,0 +1,53 @@
+#businessPartners {
+    position: relative;
+    width: 100%;
+
+    .partnersTitle {
+        text-align: center;
+        color: #f04e21;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+
+    .swiper-slide {
+        height: 0;
+        // padding-top: 41%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+
+    }
+
+    .partnerLogo1 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-mss.png);
+        // background-image: url(https://cdn.myzzym.com/myzzym/images/icon/partnersbi/11-gacheegongan.png);
+    }
+
+    .partnerLogo2 {
+        background-image: url(https://www.lugstay.com/img/main-partners-hub.png);
+    }
+
+    .partnerLogo3 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-kto.png);
+    }
+
+    .partnerLogo4 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-sto.png);
+
+    }
+
+    .partnerLogo5 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-incheon-airport.png);
+    }
+
+    .partnerLogo6 {
+        background-image: url(https://www.lugstay.com/img/partners-logo-sk-telecom.png);
+    }
+
+
+}
