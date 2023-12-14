@@ -1,0 +1,18 @@
+.header2 {
+    ul#gnb {
+        >li.menu {
+            position: relative;
+
+            >a {
+                font-size:18.72px;
+                font-weight: 700;
+                padding: 0 60px;
+
+            }
+
+            ul.smenu {
+                position: absolute;
+            }
+        }
+    }
+}
