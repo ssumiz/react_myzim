@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 // CSS
 import './css/index.css';
@@ -27,7 +28,7 @@ root.render(
 
     <Head></Head>
 
-    <Main datasrc={data}></Main>
+    <Main></Main>
 
     <Footer></Footer>
 
