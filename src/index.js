@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 
 // Lib
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap-icons/font/fonts/bootstrap-icons.min.css'
 
 // Component
 import Head from './component/Head';
@@ -17,6 +16,10 @@ import Data from './data/data.json'
 import './sass/sj.module.scss';
 import './sass/yn.module.scss';
 
+// Swiper CSS
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

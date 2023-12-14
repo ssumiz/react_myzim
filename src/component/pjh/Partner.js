@@ -1,59 +1,140 @@
 import React from 'react';
 import Style from "../../sass/jh/Partner.module.scss"
+import 'swiper/css';
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import Data from "../../data/data.json"
+
+
 
 function Partner(props) {
+
+
+
     return (
-        <div>
-            <div id="businessPartners">
-                <div class="partnersTitle">
+        <>
+            <div id={Style.businessPartners}>
+                <div classNameName={Style.partnersTitle}>
+                    <div className={Style.partnerLogo1}></div>
                     <h1>마이짐 서비스와 협력하는 파트너사</h1>
                 </div>
-                <div class="container swiper " dir="ltr">
 
-                    <div class="swiper-wrapper">
+                {/* 상단 스와이퍼  */}
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    loop={true}
+                    slidesPerView={3}
+                    speed={5000}
+                    autoHeight={true}
+                    loopAdditionalSlides={1}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                        stopOnLastSlide: false
+                    }}
 
-                        <div class="swiper-slide partnerLogo1"></div>
-                        <div class="swiper-slide partnerLogo2"></div>
-                        <div class="swiper-slide partnerLogo3"></div>
+                    modules={[Autoplay]}
+                    className={`PartnerSwiper container ${Style.swiperWrapper}`}
+                    dir="ltr"
+                >
 
-                        <div class="swiper-slide partnerLogo1"></div>
-                        <div class="swiper-slide partnerLogo2"></div>
-                        <div class="swiper-slide partnerLogo3"></div>
+                    {Data.partner_info.map((value, idx) => {
+                        // partner_index 가 4보다 작은 데이터 들만 출력 
+                        if (value.partner_index < 4) {
+                            return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                            </SwiperSlide>)
+                        }
 
-                        <div class="swiper-slide partnerLogo1"></div>
-                        <div class="swiper-slide partnerLogo2"></div>
-                        <div class="swiper-slide partnerLogo3"></div>
+                    })
+                    }
 
-                        <div class="swiper-slide partnerLogo1"></div>
-                        <div class="swiper-slide partnerLogo2"></div>
-                        <div class="swiper-slide partnerLogo3"></div>
+                    {Data.partner_info.map((value, idx) => {
+                        // partner_index 가 4보다 작은 데이터 들만 출력 
+                        if (value.partner_index < 4) {
+                            return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                            </SwiperSlide>)
+                        }
+
+                    })
+                    }
+
+                    {Data.partner_info.map((value, idx) => {
+                        // partner_index 가 4보다 작은 데이터 들만 출력 
+                        if (value.partner_index < 4) {
+                            return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                            </SwiperSlide>)
+                        }
+
+                    })
+                    }
+                </Swiper>
+
+                {/* 하단 스와이퍼 */}
+
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    loop={true}
+                    slidesPerView={3}
+                    speed={5000}
+                    autoHeight={true}
+                    loopAdditionalSlides={1}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                        stopOnLastSlide: false
+                    }}
+
+                    modules={[Autoplay]}
+                    className={`PartnerSwiper container ${Style.swiperWrap}`}
+                    dir="rtl"
+                >
+                    <div className={Style.swiperWrap}>
+
+                        {Data.partner_info.map((value, idx) => {
+                            // partner_index 가 3보다 큰 데이터 들만 출력 
+                            if (value.partner_index > 3) {
+                                return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                    <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                                </SwiperSlide>)
+                            }
+
+                        })
+                        }
+
+                        {Data.partner_info.map((value, idx) => {
+                            // partner_index 가 4보다 작은 데이터 들만 출력 
+                            if (value.partner_index > 3) {
+                                return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                    <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                                </SwiperSlide>)
+                            }
+
+                        })
+                        }
+
+                        {Data.partner_info.map((value, idx) => {
+                            // partner_index 가 4보다 작은 데이터 들만 출력 
+                            if (value.partner_index > 3) {
+                                return (<SwiperSlide className={Style.swiperSlide} key={`Slide${idx}`} >
+                                    <img src={value.partner_img_src} alt={value.partner_name} className={Style.swiperSlide} />
+                                </SwiperSlide>)
+                            }
+
+                        })
+                        }
 
                     </div>
-                </div>
-                <div class="container swiper dirRight" dir="rtl">
+                </Swiper>
 
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide partnerLogo4"></div>
-                        <div class="swiper-slide partnerLogo5"></div>
-                        <div class="swiper-slide partnerLogo6"></div>
-
-                        <div class="swiper-slide partnerLogo4"></div>
-                        <div class="swiper-slide partnerLogo5"></div>
-                        <div class="swiper-slide partnerLogo6"></div>
-
-                        <div class="swiper-slide partnerLogo4"></div>
-                        <div class="swiper-slide partnerLogo5"></div>
-                        <div class="swiper-slide partnerLogo6"></div>
-
-                        <div class="swiper-slide partnerLogo4"></div>
-                        <div class="swiper-slide partnerLogo5"></div>
-                        <div class="swiper-slide partnerLogo6"></div>
-
-                    </div>
-                </div>
             </div>
-        </div>
+        </>
     );
 }
 

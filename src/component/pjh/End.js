@@ -4,7 +4,7 @@ import { Instagram, Twitter, Youtube } from "react-bootstrap-icons"
 
 function End(props) {
     return (
-        <div id={Style.footer}>
+        <div id={Style.footer} className="mt-5">
             <div className="container">
                 <div className={` ${Style.footer} position-relative d-flex justify-content-between align-items-center `}>
                     <div className={Style.companyInfo}>

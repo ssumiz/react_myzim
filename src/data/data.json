@@ -84,32 +84,32 @@
         {
             "partner_index": 1,
             "partner_name": "한국관광공사",
-            "partner_img_src": "./imgSample.png"
+            "partner_img_src": "https://www.lugstay.com/img/partners-logo-kto.png"
         },
         {
             "partner_index": 2,
             "partner_name": "중소벤처기업부",
-            "partner_img_src": "./imgSample2.png"
+            "partner_img_src": "https://www.lugstay.com/img/partners-logo-mss.png"
         },
         {
             "partner_index": 3,
             "partner_name": "공유허브",
-            "partner_img_src": "./imgSample3.png"
+            "partner_img_src": "https://www.lugstay.com/img/main-partners-hub.png"
         },
         {
             "partner_index": 4,
             "partner_name": "인천공항",
-            "partner_img_src": "./imgSample4.png"
+            "partner_img_src": "https://www.lugstay.com/img/partners-logo-incheon-airport.png"
         },
         {
             "partner_index": 5,
             "partner_name": "서울관광재단",
-            "partner_img_src": "./imgSample5.png"
+            "partner_img_src": "https://www.lugstay.com/img/partners-logo-sto.png"
         },
         {
             "partner_index": 6,
             "partner_name": "SKtelecom",
-            "partner_img_src": "./imgSample6.png"
+            "partner_img_src": "https://www.lugstay.com/img/partners-logo-sk-telecom.png"
         }
     ],
     "event_info": [
