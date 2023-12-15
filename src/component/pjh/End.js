@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Style from "../../sass/jh/End.module.scss"
 import { Instagram, Twitter, Youtube } from "react-bootstrap-icons"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 function End(props) {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div id={Style.footer} className="mt-5">
+        <div id={Style.footer} className="mt-5" data-aos="fade-top"
+            data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <div className="container">
                 <div className={` ${Style.footer} position-relative d-flex justify-content-between align-items-center `}>
                     <div className={Style.companyInfo}>

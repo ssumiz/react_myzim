@@ -11,6 +11,10 @@
     /* 로고 색상과 동일. */
 }
 
+.personalColorBold {
+    color: #0091ff;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -73,12 +77,4 @@ li {
 
 .flexDirRow {
     flex-direction: row;
-}
-
-#businessPartners {
-
-    .swiper-wrapper {
-
-        transition-timing-function: linear !important;
-    }
 }
