@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR" !important;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.useit {
+    padding: 5rem 0;
+}
+
+.dsc {
+    font-size: 25px;
+}
+
+.h3 {
+    color: #ff8908 !important;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.threeBanner {
+
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.tabhead {
+    border-bottom: 1px solid black;
+}
+
+a:hover {
+    border-bottom: 4px solid #ff8908;
+    line-height: 1;
+    padding: 11px 0;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.a {
+    color: black;
+    text-decoration: none;
+}
+
+.w33 {
+    width: 33.33%;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.act {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    display: none;
+}
+
+.tab_img {
+    width: 302px;
+    height: 302px;
+}
+
+.tab_span {
+    min-width: 360px;
+}
