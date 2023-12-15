@@ -16,9 +16,9 @@ function Partner(props) {
     return (
         <>
             <div id={Style.businessPartners}>
-                <div classNameName={Style.partnersTitle}>
+                <div className={`${Style.partnersTitle} mb-5`}>
                     <div className={Style.partnerLogo1}></div>
-                    <h1>마이짐 서비스와 협력하는 파트너사</h1>
+                    <h1 className="personalColor">마이짐 서비스와 협력하는 파트너사</h1>
                 </div>
 
                 {/* 상단 스와이퍼  */}
@@ -37,8 +37,10 @@ function Partner(props) {
                     }}
 
                     modules={[Autoplay]}
-                    className={`PartnerSwiper container ${Style.swiperWrapper}`}
+                    className={`PartnerSwiper container ${Style.swiperWrap}`}
                     dir="ltr"
+
+                    wrapperClass={Style.swiperWrapper}
                 >
 
                     {Data.partner_info.map((value, idx) => {
@@ -94,6 +96,7 @@ function Partner(props) {
                     modules={[Autoplay]}
                     className={`PartnerSwiper container ${Style.swiperWrap}`}
                     dir="rtl"
+                    wrapperClass={Style.swiperWrapper}
                 >
                     <div className={Style.swiperWrap}>
 

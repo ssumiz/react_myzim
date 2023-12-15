@@ -1,6 +1,6 @@
 * {
-    font-family: "Nanum Gothic";
-    font-weight: 400;
+    font-family: "Nanum Gothic" !important;
+    font-weight: 1000 !important;
 
     padding: 0;
     margin: 0;
@@ -73,4 +73,12 @@ li {
 
 .flexDirRow {
     flex-direction: row;
+}
+
+#businessPartners {
+
+    .swiper-wrapper {
+
+        transition-timing-function: linear !important;
+    }
 }
