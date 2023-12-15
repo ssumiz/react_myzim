@@ -1,26 +1,41 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import menudata from '../data/menu.json';
+import h2 from '../sass/sj_h2.module.scss';
 
-import H2 from '../sass/sj_h2.module.scss';
+function Header02() {
 
-const Header02 = () => {
-    return (
-        <div className = {`${H2.header2} border-bottom py-4`}>
-            <div className="container">
-            <ul id = {`${H2.gnb}`} className = "d-flex justify-content-center align-items-center m-0">
-                <li className={H2.menu}><a href="#">회사 소개</a>
-                <ul className = {H2.smenu}>
-                    <li><a href="#">인삿말</a></li>
-                    <li><a href="#">사업소개</a></li>
-                </ul>
-                </li>
-                <li className={H2.menu}><a href="#">사용 방법</a></li>
-                <li className={H2.menu}><a href="#">이벤트</a></li>
-                <li className={H2.menu}><a href="#">리뷰</a></li>
-                <li className={H2.menu}><a href="#">고객센터</a></li>
-            </ul>
-            </div>
-        </div>
-    );
-};
+
+  return (
+    <Navbar expand="lg" className="border-bottom p-0 m-0 position-relative">
+      <Container>
+        <Navbar.Collapse id="basic-navbar-nav" className={`${h2.all_nav} d-flex justify-content-center`}>
+            {
+                menudata.map((el,idx)=>{
+                    return(
+                        <Nav.Link href={el.href} className={h2.mainnav}>{el.menu1}
+                        <Navbar className={`${h2.smenu} m-0 p-0`}>
+                        {
+                            el.d2.map((e,v)=>{
+                              return(
+                                <>
+                                  <a key={v} href={e.href}>{e.name}</a>
+                                </>
+                              );
+                            })
+                        }
+                        </Navbar>
+                        </Nav.Link>
+                    );
+                })
+            }
+            
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
 
 export default Header02;

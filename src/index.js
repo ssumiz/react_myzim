@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client';
 // CSS
 import './css/index.css';
 
-import './sass/jh.scss';
+import jh from './sass/jh.module.scss';
 import cb from './sass/sj.module.scss';
-import './sass/yn.scss';
+import yn from './sass/yn.module.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap-icons/font/fonts/bootstrap-icons.min.css'

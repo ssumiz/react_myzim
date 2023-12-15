@@ -1,18 +1,43 @@
-.header2 {
-    ul#gnb {
-        >li.menu {
-            position: relative;
+.all_nav::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-height: 0;
+    background-color: white;
+    transition: all .4s;
+}
 
-            >a {
-                font-size:18.72px;
-                font-weight: 700;
-                padding: 0 60px;
+.all_nav:hover::after {
+    min-height: 250px;
+}
 
-            }
 
-            ul.smenu {
-                position: absolute;
-            }
-        }
-    }
+.mainnav {
+    display: block;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.smenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    min-height: 250px;
+    background-color: transparent;
+    transition: all .4s;
+}
+
+.smenu > a {
+    display: block;
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 18px;
 }
