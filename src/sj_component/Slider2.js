@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Footer(props) {
+const Slider2 = () => {
     return (
         <div>
+            
         </div>
     );
-}
+};
 
-export default Footer;
+export default Slider2;

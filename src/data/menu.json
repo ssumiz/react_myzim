@@ -2,6 +2,7 @@
     {
         "menu1": "회사 소개",
         "href": "#none",
+        "isSub": "true",
         "d2": [
             {
                 "name": "인삿말",
@@ -16,6 +17,7 @@
     {
         "menu1" : "사용 방법",
         "href": "/use",
+        "isSub":"false",
         "d2": [
 
         ]
@@ -23,6 +25,7 @@
     {
         "menu1" : "이벤트",
         "href" : "/event",
+        "isSub":"false",
         "d2" : [
 
         ]
@@ -30,6 +33,7 @@
     {
         "menu1" : "리뷰",
         "href" : "/review",
+        "isSub":"false",
         "d2" : [
 
         ]
@@ -37,6 +41,7 @@
     {
         "menu1" : "고객센터",
         "href" : "#none",
+        "isSub" : "true",
         "d2" : [
             {
                 "name" : "공지사항",

@@ -1,0 +1,55 @@
+.slider1 {
+    height: 100%;
+}
+
+.myfirstswiper {
+    height: 100%;
+}
+
+.myfirstswiper img {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.myfirstswiper .pwrap {
+    left: 0;
+    bottom: 0;
+    padding-left: 23px;
+    padding-bottom: 40px;
+    color: white;
+    z-index: 100000;
+}
+
+.myfirstswiper .pwrap h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.myfirstswiper .pwrap h2::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: white;
+}
+
+.myfirstswiper .pwrap h3 {
+    position: relative;
+    font-size: 45px;
+}
+
+.myfirstswiper .pwrap h3::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: white;
+}

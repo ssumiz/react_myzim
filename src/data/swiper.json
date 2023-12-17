@@ -2,19 +2,16 @@
     {
         "slide_idx": 1,
         "backgroundImg": "/img/sj_img/slider_visual_1.jpg",
-        "backgroundContents": "기숙사 사용자에게 더 큰 행복을! | 친구야 마이짐 같이 가자!",
-        "slide_right_menu" : "PERSONA I"
+        "backgroundContents": ["기숙사 사용자에게 더 큰 행복을!","친구야 마이짐 같이 가자!"]
     },
     {
         "slide_idx": 2,
         "backgroundImg": "/img/sj_img/slider_visual_2.jpg",
-        "backgroundContents": "캠핑족들에게 좀 더 편안함을! | 마이짐 브이로그!",
-        "slide_right_menu" : "PERSONA II"
+        "backgroundContents":[ "캠핑족들에게 좀 더 편안함을!","마이짐 브이로그!" ]
     },
     {
         "slide_idx": 3,
         "backgroundImg": "/img/sj_img/slider_visual_3.jpg",
-        "backgroundContents": "자녀들을 키우는 주부들을 위해 | 맘카페 배너 이벤트",
-        "slide_right_menu" : "PERSONA III"
+        "backgroundContents": ["자녀들을 키우는 주부들을 위해" ,"맘카페 배너 이벤트"]
     }
 ]
