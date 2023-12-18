@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// Lib
+// CSS
+import './css/index.css';
+
+import './sass/jh.module.scss';
+import './sass/sj.module.scss';
+import './sass/yn.module.scss';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Component
@@ -10,6 +16,7 @@ import Main from './component/Main';
 import Footer from './component/Footer';
 
 // Data
+import data from './data/data.json'
 import Data from './data/data.json'
 
 // SCSS
@@ -32,7 +39,8 @@ root.render(
 
     <Head Data={Data}></Head>
 
-    <Main Data={Data}></Main>
+    <Main datasrc={data}></Main>
+    {/* <Main Data={Data}></Main> */}
 
     <Footer Data={Data}></Footer>
 
