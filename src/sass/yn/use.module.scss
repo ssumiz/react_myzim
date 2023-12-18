@@ -1,0 +1,101 @@
+.useit {
+    padding: 5rem 0;
+}
+
+.dsc {
+    font-size: 25px;
+}
+
+
+
+.threeBanner {
+
+    border: 1px solid black;
+    border-radius: 2rem;
+    max-width: 1200px !important;
+}
+
+.tabhead {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+.w33 {
+    width: 33.33%;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.act {
+    display: flex !important;
+    //     justify-content: center;
+    //     align-items: center;
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    line-height: 35px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab_img {
+    width: 302px;
+    height: 302px;
+}
+
+.tab_span {
+    min-width: 360px;
+}
+
+.tab_w {
+    max-width: 460px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+
+/*use css*/
+
+
+.wrap {
+    color: #ff8908 !important;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+
+.heada {
+    color: black;
+    text-decoration: none;
+
+}
+

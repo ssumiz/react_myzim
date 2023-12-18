@@ -4,10 +4,10 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 // CSS
 import './css/index.css';
-
+import './css/use.css'
 import './sass/jh.module.scss';
 import './sass/sj.module.scss';
-import './sass/yn.module.scss';
+import './sass/yn/use.module.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap-icons/font/fonts/bootstrap-icons.min.css'
@@ -24,7 +24,7 @@ import data from './data/data.json'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <>
+  <div >
 
     <Head></Head>
 
@@ -32,7 +32,7 @@ root.render(
 
     <Footer></Footer>
 
-  </>
+  </div>
 );
 
 
