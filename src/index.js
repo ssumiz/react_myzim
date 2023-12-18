@@ -4,10 +4,6 @@ import ReactDOM from 'react-dom/client';
 // CSS
 import './css/index.css';
 
-import './sass/jh.module.scss';
-import cb from './sass/sj.module.scss';
-import './sass/yn.module.scss';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Component
@@ -20,8 +16,9 @@ import data from './data/data.json'
 import Data from './data/data.json'
 
 // SCSS
-import './sass/sj.module.scss';
-import './sass/yn.module.scss';
+import './sass/sj/sj.module.scss';
+import './sass/yn/yn.module.scss';
+import cb from './sass/sj/sj.module.scss';
 
 // Swiper CSS
 import 'swiper/css';
