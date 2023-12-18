@@ -11,8 +11,6 @@ import Data from "../../data/data.json"
 
 function Partner(props) {
 
-
-
     return (
         <>
             <div id={Style.businessPartners}>

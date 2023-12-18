@@ -1,38 +1,62 @@
 div.header1 {
-    padding: 15px 0;
+    padding: 25px 0;
 
     .logo {
         >a {
             display: block;
         }
     }
-    .hrmenu {
-        a {
-            &:not(:last-child) {
-                margin-right: 45px;
-                position: relative;
-            }
 
-            &:not(:last-child)::after {
+    .top_nav{
+        .dropdown_select {
+            position: relative;
+
+            &::after {
                 content: '';
+                display: block;
                 position: absolute;
-                right: -20px;
                 top: 50%;
                 transform: translateY(-50%);
-                display: block;
+                right: 0;
                 width: 1px;
-                height: 90%;
+                height: 50%;
                 background-color: rgba(0,0,0,.1);
+
             }
 
-            &:first-child {
-                i {
-                    &::before {
-                        color: rgba(0,0,0,.2);
-                        margin-left: 10px;
-                    }
+            >a {
+                &::after {
+                    content: '\F282';
+                    font-family: 'bootstrap-icons';
+                    border: none;
+                    vertical-align: 1px;
+                    margin-left: 10px;
+                    font-size: 12px;
                 }
             }
-        }
+
+        }   
+
+            >a {
+                &:first-of-type {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        width: 1px;
+                        height: 50%;
+                        background-color: rgba(0,0,0,.1);
+                    }
+                }
+
+            }
+
+        
     }
+    
 }

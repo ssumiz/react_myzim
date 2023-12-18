@@ -1,0 +1,10 @@
+.swiper-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background-image: linear-gradient(1deg, rgba(0, 0, 0, 0.28) 1.01%, rgba(0, 0, 0, 0.00) 99.1%);
+    // 세중님 이거 swiper 전체 적용됩니다. 클래스 추가해서 수정해주세요.
+}

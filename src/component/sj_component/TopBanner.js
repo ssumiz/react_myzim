@@ -1,5 +1,5 @@
 import React from 'react';
-import cb from '../sass/sj/sj.module.scss';
+import cb from '../../sass/sj/sj.module.scss';
 
 const TopBanner = () => {
     return (

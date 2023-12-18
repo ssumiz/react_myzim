@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 // CSS
 import './css/index.css';
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Component
@@ -36,8 +37,8 @@ root.render(
 
     <Head Data={Data}></Head>
 
-    <Main datasrc={data}></Main>
-    {/* <Main Data={Data}></Main> */}
+    {/* <Main datasrc={data}></Main> */}
+    <Main Data={Data}></Main>
 
     <Footer Data={Data}></Footer>
 

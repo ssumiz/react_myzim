@@ -1,0 +1,60 @@
+[
+    {
+        "menu1": "회사 소개",
+        "href": "#none",
+        "isSub": "true",
+        "d2": [
+            {
+                "name": "인삿말",
+                "href": "/greetings"
+            },
+            {
+                "name": "사업 소개",
+                "href": "/com"
+            }
+        ]
+    },
+    {
+        "menu1" : "사용 방법",
+        "href": "/use",
+        "isSub":"false",
+        "d2": [
+
+        ]
+    },
+    {
+        "menu1" : "이벤트",
+        "href" : "/event",
+        "isSub":"false",
+        "d2" : [
+
+        ]
+    },
+    {
+        "menu1" : "리뷰",
+        "href" : "/review",
+        "isSub":"false",
+        "d2" : [
+
+        ]
+    },
+    {
+        "menu1" : "고객센터",
+        "href" : "#none",
+        "isSub" : "true",
+        "d2" : [
+            {
+                "name" : "공지사항",
+                "href" : "/notice"
+            },
+            {
+                "name" : "FAQ",
+                "href" : "/faq"
+            },
+            {
+                "name" : "1:1 상담",
+                "href" : "/onetoone"
+            }
+        ]
+    }
+]
