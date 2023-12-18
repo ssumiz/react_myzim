@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Tb from '../sj_component/TopBanner';
+import Hd from '../sj_component/Header';
+
 function Head(props) {
     return (
-        <div className= "jh">
-            헤드입니다.
-
-            <h2 className={"jh"}>안녕하세요.</h2>
+        <div>
+            <Tb />
+            <Hd />
         </div>
     );
 }

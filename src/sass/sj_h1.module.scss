@@ -1,0 +1,38 @@
+div.header1 {
+    padding: 15px 0;
+
+    .logo {
+        >a {
+            display: block;
+        }
+    }
+    .hrmenu {
+        a {
+            &:not(:last-child) {
+                margin-right: 45px;
+                position: relative;
+            }
+
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 1px;
+                height: 90%;
+                background-color: rgba(0,0,0,.1);
+            }
+
+            &:first-child {
+                i {
+                    &::before {
+                        color: rgba(0,0,0,.2);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 
 import './sass/jh.module.scss';
-import './sass/sj.module.scss';
+import cb from './sass/sj.module.scss';
 import './sass/yn.module.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
