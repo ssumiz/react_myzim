@@ -4,10 +4,9 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 // CSS
 import './css/index.css';
-import './css/use.css'
-import './sass/jh.module.scss';
-import './sass/sj.module.scss';
-import './sass/yn/use.module.scss';
+import './css/use.css';
+import './css/review.css';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap-icons/font/fonts/bootstrap-icons.min.css'
