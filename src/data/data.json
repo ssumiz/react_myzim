@@ -266,7 +266,7 @@
             "size_explain": "우체국 5호 박스 20개~24개",
             "size_price": "월 6만원~",
             "size_purpose": "1~2인 가구 짐 보관",
-            "size_img_src": "img/yong/Small.png"
+            "size_img_src": "img/yong/Small.jpg"
         },
         {
             "size_name": "Medium",
@@ -280,7 +280,7 @@
             "size_explain": "우체국 5호 박스 54~72개",
             "size_price": "월 20만원~",
             "size_purpose": "소형이사,기업창고,미술품보관 ",
-            "size_img_src": "img/yong/Large.png"
+            "size_img_src": "img/yong/Large.jpg"
         }
     ],
     "user_form": [

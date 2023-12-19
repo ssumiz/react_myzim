@@ -1,0 +1,38 @@
+#sizeInfo {
+    .swiper-pagination {
+
+        position: unset; //position unset 으로 포지션을 풀어서 슬라이드 밑으로 내려오게끔하였음.
+        width: auto; //자동으로 width가 100%로 들어가서 width auto로 풀어준다음 인라인블럭을 쓰게함
+        display: inline-block;
+        border: 2px solid silver;
+        white-space: nowrap;
+        padding: 0 1rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+    }
+
+    .swiper-pagination-bullet {
+
+        width: 100px;
+        height: auto;
+        border-radius: 0;
+        padding: 0 1rem;
+        margin: 1rem 1rem !important;
+        line-height: 10px;
+        font-size: 15px;
+        color: black;
+        opacity: 1 !important;
+        background: none !important;
+    }
+
+    // .swiper-pagination-bullet::after::before {
+    //     content: "ㅣ";
+    //     font-size: 10px;
+    //     margin-left: 1rem !important;
+    //     color: black !important;
+    // }
+
+    .swiper-pagination-bullet-active {
+        color: #0091ff;
+    }
+}
