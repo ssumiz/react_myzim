@@ -46,7 +46,7 @@ function End(props) {
                             <li className={`${Style.csNumber} personalColor`}>1566-5516</li>
                             <li className={Style.hoursOfUse}>평일 09:00~18:00</li>
                             <li >주말/공휴일 07:00~19:00</li>
-                            <li >Copyright <i class="bi bi-c-circle"></i> MYZIM Corp.All Rights Reserved</li>
+                            <li >Copyright <i className="bi bi-c-circle"></i> MYZIM Corp.All Rights Reserved</li>
 
                         </ul>
                     </div>

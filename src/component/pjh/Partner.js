@@ -38,7 +38,7 @@ function Partner(props) {
                     className={`PartnerSwiper container ${Style.swiperWrap}`}
                     dir="ltr"
 
-                    wrapperClass={Style.swiperWrapper}
+                    wrapperclassName={Style.swiperWrapper}
                 >
 
                     {Data.partner_info.map((value, idx) => {
@@ -94,7 +94,7 @@ function Partner(props) {
                     modules={[Autoplay]}
                     className={`PartnerSwiper container ${Style.swiperWrap}`}
                     dir="rtl"
-                    wrapperClass={Style.swiperWrapper}
+                    wrapperclassName={Style.swiperWrapper}
                 >
                     <div className={Style.swiperWrap}>
 

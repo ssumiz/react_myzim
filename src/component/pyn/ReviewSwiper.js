@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import use from '../../data/data.json'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -64,7 +64,7 @@ export default function App() {
                                                 <div className={`${style.info_wrap} d-flex`}>
                                                     <p>{v.user_id}</p>
                                                     ㅣ
-                                                    <p>{v.branch_number}</p>
+                                                    <p>{use.branch_info.map((e, i) => e.branch_number === v.branch_number ? e.branch_name : null)}</p>
                                                     ㅣ
                                                     <p>{v.size_name}</p>
                                                     ㅣ

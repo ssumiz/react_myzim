@@ -13,19 +13,19 @@ function Header02() {
                 <Nav className="position-relative">
                     {menudata.map((e, i) => {
                         return (
-                            <>
-                                <Nav.Link href={e.href} className={h2.mainmenu}>{e.menu1}
-                                    {e.isSub == 'true' &&
-                                        <Nav className={`${h2.smenu} position-absolute d-none`}>
-                                            {
-                                                e.d2.map((el, idx) => {
-                                                    return <Nav.Link href={el.href}>{el.name}</Nav.Link>
-                                                })
-                                            }
-                                        </Nav>
-                                    }
-                                </Nav.Link>
-                            </>
+
+                            <Nav.Link href={e.href} className={h2.mainmenu} key={i} >{e.menu1}
+                                {e.isSub == 'true' &&
+                                    <Nav className={`${h2.smenu} position-absolute d-none`}>
+                                        {
+                                            e.d2.map((el, idx) => {
+                                                return <Nav.Link href={el.href}>{el.name}</Nav.Link>
+                                            })
+                                        }
+                                    </Nav>
+                                }
+                            </Nav.Link>
+
                         );
                     })}
                 </Nav>
