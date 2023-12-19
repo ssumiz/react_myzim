@@ -1,0 +1,28 @@
+{
+    "tab": [
+        {
+            "tabsubject": "상담방문",
+            "tabact": {
+                "tabtext": "지점과 창고 사이즈, 기간을 정하신 후,",
+                "tabtext2":"온라인 상담 또는 방문 상담을 진행해보세요.",
+                "tabimg": "/img/useimg/use1.jpg"
+            }
+        },
+        {
+            "tabsubject": "계약결제",
+            "tabact": {
+                "tabtext": "사용할 지점/사이즈/기간 결정후 회원가입을 해주세요.",
+                "tabtext2": "상담으로 쿠폰적용 계약/결제 완료",
+                "tabimg": "/img/useimg/use2.jpg"
+            }
+        },
+        {
+            "tabsubject": "보관",
+            "tabact": {
+                "tabtext": "지문등록/모바일카드 발급 후",
+                "tabtext2": "365일 24시간 자유롭게 편안창고 이용",
+                "tabimg": "/img/useimg/use3.jpg"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+.tabhead a:hover,
+.tabhead .act {
+    border-bottom-color: #ff8908 !important;
+    /* font-size: 1.5rem;  */
+}
+
+.tabhead h4 {
+
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    line-height: 35px;
+}

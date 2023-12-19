@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap');
 
 * {
+<<<<<<< HEAD
     font-family: 'Noto Sans KR', sans-serif !important;
     font-weight: 1000 !important;
 
@@ -79,4 +80,11 @@ li {
 
 .flexDirRow {
     flex-direction: row;
+=======
+    font-family: "Nanum Gothic";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+>>>>>>> origin/PYN
 }
