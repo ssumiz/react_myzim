@@ -1,9 +1,15 @@
 import React from 'react'
 import use from '../../data/use.json'
 import style from '../../sass/yn/use.module.scss'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 function Useit() {
     const [tabnm, settabnm] = useState(0);
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+          settabnm(prevTabnm => (prevTabnm + 1)%use.tab.length);
+        }, 3000);
+        return () => clearInterval(intervalId);
+    })
     return (
         <div className={`${style.useit} container`}>
             <div className={`${style.dsc} text-center`}>
