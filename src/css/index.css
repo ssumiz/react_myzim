@@ -13,3 +13,55 @@ a {
 ul {
   list-style: none;
 }
+
+/* 드롭다운 커스텀 */
+
+.nav .nav-item .dropdown-menu {
+  display: block !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  left: 0 !important;
+  right: -30% !important;
+  min-width: auto !important;
+}
+
+.nav .nav-item:first-child .dropdown-menu.show {
+  height: 100px !important;
+  border-top: 3px solid #fa002d !important;
+  box-shadow : 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.nav .nav-item:not(:first-child) .dropdown-menu.show {
+  height: 140% !important;
+  border-top: 3px solid #fa002d !important;
+  box-shadow : 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.nav-item .dropdown-menu.show .dropdown-item {
+  padding: 0 !important;
+  padding-left: 10px !important;
+  padding-top: 15px !important;
+  color: rgba(0,0,0,.5) !important;
+}
+
+.nav-item .dropdown-menu.show .dropdown-item:hover {
+  background: transparent;
+}
+
+.nav-item #basic-nav-dropdown::after {
+  transition: all .4s;
+  margin-left: .55em;
+}
+
+.nav-item.show #basic-nav-dropdown::after {
+    transform: rotate(180deg);
+}
+
+.nav-item .dropdown-menu.show .dropdown-item:hover {
+  color: #fa002d !important;
+}
+
+/* 드롭다운 커스텀 끝 */

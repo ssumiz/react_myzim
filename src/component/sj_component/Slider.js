@@ -4,7 +4,7 @@ import Ss1 from './Slider1';
 
 const Slider = () => {
     return (
-        <div className={`${mainslider.main_slider} d-flex`}>
+        <div>
             <Ss1 />
         </div>
     );

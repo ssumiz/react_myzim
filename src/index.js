@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+// React-Router-Dom
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 // CSS
 import './css/index.css';
 
@@ -33,7 +36,7 @@ import 'aos/dist/aos.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <>
+  <BrowserRouter>
 
     <Head Data={Data}></Head>
 
@@ -42,7 +45,7 @@ root.render(
 
     <Footer Data={Data}></Footer>
 
-  </>
+  </BrowserRouter>
 );
 
 
