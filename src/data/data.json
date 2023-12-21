@@ -257,28 +257,28 @@
         {
             "size_name": "Mini",
             "size_explain": "우체국 5호 박스 8개~12개",
-            "size_price": "월 3만원 부터",
+            "size_price": "월 3만원~",
             "size_purpose": "취미용품/서류/리빙박스",
             "size_img_src": "img/yong/Mini.png"
         },
         {
             "size_name": "Small",
             "size_explain": "우체국 5호 박스 20개~24개",
-            "size_price": "월 6만원 부터",
+            "size_price": "월 6만원~",
             "size_purpose": "1~2인 가구 짐 보관",
             "size_img_src": "img/yong/Small.jpg"
         },
         {
             "size_name": "Medium",
             "size_explain": "우체국 5호 박스 36개~54개",
-            "size_price": "월 9만원 부터",
+            "size_price": "월 9만원~",
             "size_purpose": "작은 원룸 이사에 추천",
             "size_img_src": "img/yong/Medium.png"
         },
         {
             "size_name": "Large",
             "size_explain": "우체국 5호 박스 54~72개",
-            "size_price": "월 20만원 부터",
+            "size_price": "월 20만원~",
             "size_purpose": "소형이사,기업창고,미술품보관 ",
             "size_img_src": "img/yong/Large.jpg"
         }

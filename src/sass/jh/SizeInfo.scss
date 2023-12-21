@@ -9,11 +9,6 @@
         padding: 0 1rem;
         border-radius: 2rem;
         margin-top: 1rem;
-
-        // position: absolute;
-        // top: 50%;
-        // right: 5%;
-        // transform: translateY(-50%);
     }
 
     .swiper-pagination-bullet {
@@ -40,21 +35,4 @@
     .swiper-pagination-bullet-active {
         color: #0091ff;
     }
-
-    .dataPos {
-        margin-top: 5%;
-        margin-left: 40%;
-    }
-
-    .swiper-slide {
-        opacity: 0 !important;
-    }
-
-    .swiper-slide-active {
-        opacity: 1.0 !important;
-    }
-
-
-
-
 }
