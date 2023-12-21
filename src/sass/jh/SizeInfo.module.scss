@@ -1,5 +1,5 @@
 .swiper {
-    width: 50%;
+    width: 80%;
 }
 
 .swiperSlide {
@@ -19,13 +19,4 @@
 
 .swiperHeight {
     height: 600px;
-}
-
-.fade-transition {
-    transition: opacity 0.5s ease-in-out; // Adjust the duration and timing function as needed
-    opacity: 1;
-}
-
-.fade-transition-hidden {
-    opacity: 0;
 }
