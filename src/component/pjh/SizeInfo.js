@@ -7,9 +7,10 @@ import 'swiper/css';
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
 
+import { CaretRightFill } from 'react-bootstrap-icons';
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
 import Data from "../../data/data.json"
 
@@ -17,7 +18,10 @@ function SizeInfo(props) {
 
     const [activeIdx, setIdx] = useState(0);
 
-
+    const handleSlideChange = (Swiper) => {
+        setIdx(Swiper.realIndex);
+        console.log(activeIdx);
+    }
 
     const pagination = {
         clickable: true,
@@ -41,21 +45,27 @@ function SizeInfo(props) {
                         spaceBetween={50}
                         loop={true}
                         slidesPerView={1}
-                        speed={5000}
+                        // speed={5000}
                         autoHeight={true}
                         loopAdditionalSlides={1}
 
-                        effect="fade"
+                        effect={"fade"}
+                        fadeEffect={{
+                            crossFade: false, // Enable cross fade transition
+                        }}
+
+                        onSlideChange={handleSlideChange}
+
 
                         autoplay={{
-                            delay: 0,
+                            delay: 2500,
                             disableOnInteraction: false,
                             stopOnLastSlide: false
                         }}
 
                         pagination={pagination}
                         modules={[Autoplay, EffectFade, Pagination]}
-                        className={`{Style.swiper} fade-transition-hidden`}
+                        className={`${Style.swiper}`}
                     >
 
                         {Data.size_info.map((value, idx) => {
@@ -69,9 +79,29 @@ function SizeInfo(props) {
                         }
 
                     </Swiper>
-                    <div>
-                        <button></button>
+
+                    <div className="position-absolute d-flex flex-column align-items-center pt-5 dataPos">
+
+                        <ul className="pt-3 fs-5">
+                            <li className="mb-5">
+                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 사이즈명 </span>
+                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_name}</span>
+                            </li>
+                            <li className="mb-5">
+                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 용도 </span>
+                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_purpose}</span>
+                            </li>
+                            <li className="mb-5">
+                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 가격 </span>
+                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_price}</span>
+                            </li>
+                            <li className="mb-5">
+                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 구성 </span>
+                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_explain}</span>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
 
 

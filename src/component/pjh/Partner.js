@@ -3,7 +3,7 @@ import Style from "../../sass/jh/Partner.module.scss"
 import 'swiper/css';
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 import Data from "../../data/data.json"
 

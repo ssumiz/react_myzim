@@ -19,7 +19,9 @@ function End(props) {
                 <div className={` ${Style.footer} position-relative d-flex justify-content-between align-items-center `}>
                     <div className={Style.companyInfo}>
                         <ul>
-                            <li className={`${Style.companyName} personalColor`}>MYZIM</li>
+                            {/* <li className={`${Style.companyName} personalColor`}>MYZIM</li> */}
+
+                            <li className={`${Style.companyName} personalColor`}><img src="/img/pjh/Logo.png" alt="" /></li>
 
                             <li>대표: 손흥민</li>
                             <li>경기도 성남시 수정구 분당로 에이빌딩 2F</li>
