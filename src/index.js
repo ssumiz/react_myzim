@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import './css/index.css';
 import './css/use.css';
 import './css/review.css';
+import './css/branch.css';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';

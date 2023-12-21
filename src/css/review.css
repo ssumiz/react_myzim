@@ -1,4 +1,4 @@
-button {
+.review_btn {
     z-index: 200;
     box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
     cursor: pointer;
@@ -9,8 +9,8 @@ button {
     color: #fff;
     display: inline-block;
     position: absolute;
-    bottom: -36%;
-    right: 10%;
+    bottom: 0;
+    right: 20%;
     text-align: left;
 }
 

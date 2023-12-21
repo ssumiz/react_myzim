@@ -19,7 +19,7 @@ export default function App() {
     const [review, setreview] = useState(0);
     return (
         <>
-            <div className={`${style.reviewBanner} rel`}>
+            <div className={`${style.reviewBanner} ${style.rel} `}>
                 <div className={style.txt_set}>
                     <h2>보관 사이즈별 실제 이용후기.
                     </h2>
@@ -87,7 +87,7 @@ export default function App() {
                         <i className='bi bi-plus-lg'></i>
                     </a>
                 </div>
-                <button className={`${style.tbox_right} all`}>
+                <button className={`${style.tbox_right} all review_btn`}>
                     <p className={style.title0}>
                         VIEW MORE
                     </p>

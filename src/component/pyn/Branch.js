@@ -1,17 +1,24 @@
 import React from 'react'
+import use from '../../data/data.json'
+import style from '../../sass/yn/branch.module.scss'
+
+import { useState } from 'react';
+
 
 function Branch() {
+    const [region, setregion] = useState(0)
+    const [branch, setbranch] = useState(0)
     return (
         <div>
-            <div id="addressMap">
-                <div className="intro container text-center my-5 ">
+            <div className='addressMap'>
+                <div className={`${style.intro} intro container text-center my-5 `}>
                     <h2>지점 위치 및 소개</h2><br />
                     대한민국 여러 지점에서 스토어관리를 합니다.
                 </div>
 
                 <div className="adMap container d-flex justify-content-between flex-column flex-md-row mt-5">
                     <div className="wrapper col-md-6">
-                        <div id="map">
+                        <div className='map'>
 
                             <script type="text/javascript"
                                 src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=63fcf8dab6de88baf904e97b0100b062"></script>
@@ -31,7 +38,42 @@ function Branch() {
                             T map &nbsp;  &nbsp; 카카오맵 &nbsp;  &nbsp; 네이버지도 &nbsp;  &nbsp; 구글 맵
                         </p>
                     </div>
+                </div>
+                <div className="firstad container my-5">
+                    <ul className="citynm d-md-flex row justify-content-center align-items-center">
+                        {
+                            use.region_info.map((v, i) => {
+                                return (
+                                    <>
 
+
+                                        <li
+                                            onClick={() => { setregion(i) }}
+                                            className={`${region === i ? 'on' : null} col-2`}>
+                                            {v.region_name}
+                                        </li>
+                                    </>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
+                <div className="secondad container my-5">
+                    <ul className="subnm d-md-flex row justify-content-center align-items-center">
+                        {
+                            use.branch_info.map((vv, ii) => {
+                                return (
+                                    <>
+                                        <li
+                                            onClick={() => { setbranch(ii) }}
+                                            className={`${branch === ii ? 'on' : null} col-2`}>
+                                            {vv.branch_name}
+                                        </li>
+                                    </>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
