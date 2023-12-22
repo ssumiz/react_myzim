@@ -1,0 +1,43 @@
+.review_btn {
+    z-index: 200;
+    box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    padding: 2.8em 2rem;
+    max-height: 340px;
+    max-width: 340px;
+    background: #f04e23;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    text-align: left;
+}
+
+p {
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.title0:after {
+    content: "";
+    color: white;
+
+}
+
+.all:after {
+    font-size: 3rem !important;
+    line-height: 2;
+    color: orange !important;
+}
+
+.swiper-wrapper img {
+    max-width: 100%;
+    width: 500px;
+    height: 676px;
+    border-radius: 2rem;
+    box-shadow: 0.2 0.2 0.2 0.5rem;
+
+}
