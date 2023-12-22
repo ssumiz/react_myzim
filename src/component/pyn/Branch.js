@@ -2,14 +2,18 @@ import React from 'react'
 import use from '../../data/data.json'
 import style from '../../sass/yn/branch.module.scss'
 
-import { useState } from 'react';
+import { Helmet } from 'react-helmet';
+
+import { useState, useEffect } from 'react';
 
 
 function Branch() {
     const [region, setregion] = useState(0)
     const [branch, setbranch] = useState(0)
+
     return (
         <div>
+
             <div className='addressMap'>
                 <div className={`${style.intro} intro container text-center my-5 `}>
                     <h2>지점 위치 및 소개</h2><br />
@@ -18,11 +22,15 @@ function Branch() {
 
                 <div className="adMap container d-flex justify-content-between flex-column flex-md-row mt-5">
                     <div className="wrapper col-md-6">
-                        <div className='map'>
+                        <div id='map' className='map'>
+                            {
+                                use.branch_info[branch].branch_pos
+                            }
+                            {/* <Helmet>
 
-                            <script type="text/javascript"
-                                src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=63fcf8dab6de88baf904e97b0100b062"></script>
-
+                                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8cb9e561bde2e24c49fcf16e0cda250e"></script>
+                           
+                            </Helmet> */}
                         </div>
                     </div>
 
