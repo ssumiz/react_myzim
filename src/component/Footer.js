@@ -1,6 +1,7 @@
 import React from 'react';
 import End from './pjh/End'
 import QuickManu from './pjh/QuickMenu'
+import Popup from './pjh/Popup'
 
 function Footer(props) {
     return (
@@ -10,6 +11,7 @@ function Footer(props) {
 
             <QuickManu></QuickManu>
 
+            <Popup></Popup>
         </div>
     );
 }

@@ -10,7 +10,7 @@
 }
 
 .personalColor {
-    color: #B8FBFF;
+    color: #e2f2ff;
     /* 로고 색상과 동일. */
 }
 
@@ -20,6 +20,10 @@
 
 .personalColorBoldBg {
     background-color: #0091ff;
+}
+
+.personalColorBg {
+    background-color: #e2f2ff;
 }
 
 a {
