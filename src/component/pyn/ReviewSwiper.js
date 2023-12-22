@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 // import './styles.css';
 
 import style from '../../sass/yn/review.module.scss'
+import '../../sass/yn/review.scss'
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
@@ -19,10 +20,10 @@ export default function App() {
     const [review, setreview] = useState(0);
     return (
         <>
-            <div className={`${style.reviewBanner} ${style.rel} `}>
+            <div className={`${style.reviewBanner} ${style.rel} mtb-15`}>
                 <div className={style.txt_set}>
-                    <h2>보관 사이즈별 실제 이용후기.
-                    </h2>
+                    <h1 className="personalColorBold mb-10">보관 사이즈별 실제 이용후기.
+                    </h1>
                 </div>
                 <div className={style.background}></div>
 

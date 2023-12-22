@@ -1,6 +1,7 @@
 import React from 'react'
 import use from '../../data/data.json'
 import style from '../../sass/yn/branch.module.scss'
+import '../../sass/yn/branch.scss'
 
 import { Helmet } from 'react-helmet';
 
@@ -12,7 +13,7 @@ function Branch() {
     const [branch, setbranch] = useState(0)
 
     return (
-        <div>
+        <div className="mtb-10">
 
             <div className='addressMap'>
                 <div className={`${style.intro} intro container text-center my-5 `}>

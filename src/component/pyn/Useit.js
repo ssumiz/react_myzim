@@ -1,20 +1,21 @@
 import React from 'react'
 import use from '../../data/use.json'
 import style from '../../sass/yn/use.module.scss'
-import { useState,useEffect } from 'react';
+import '../../sass/yn/use.scss'
+import { useState, useEffect } from 'react';
 function Useit() {
     const [tabnm, settabnm] = useState(0);
     useEffect(() => {
         const intervalId = setInterval(() => {
-          settabnm(prevTabnm => (prevTabnm + 1)%use.tab.length);
+            settabnm(prevTabnm => (prevTabnm + 1) % use.tab.length);
         }, 3000);
         return () => clearInterval(intervalId);
     })
     return (
-        <div className={`${style.useit} container`}>
-            <div className={`${style.dsc} text-center`}>
+        <div className={`${style.useit} container mtb-10`}>
+            <div className={`${style.dsc} text-center mb-5`}>
                 <p >
-                    <h3 className={style.wrap}><strong>사용방법</strong></h3> <br />
+                    <h1 className={`${style.wrap} personalColorBold`}>사용방법</h1> <br />
                     사용방법을 알려드립니다.
                 </p>
             </div>

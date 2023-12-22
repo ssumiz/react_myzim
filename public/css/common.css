@@ -68,6 +68,8 @@ li {
 .container {
     margin: auto;
     width: 1400px;
+
+    /* margin: 100px 0; */
 }
 
 .height100 {
@@ -80,4 +82,28 @@ li {
 
 .flexDirRow {
     flex-direction: row;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+
+.mt-15 {
+    margin-top: 15rem;
+}
+
+.mb-15 {
+    margin-bottom: 15rem;
+}
+
+.mtb-10 {
+    margin: 10rem 0;
+}
+
+.mtb-15 {
+    margin: 15rem 0;
 }

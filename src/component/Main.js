@@ -14,10 +14,10 @@ function Main(props) {
             <Branch></Branch>
 
             <Review></Review>
-            
-            <Useit></Useit>
 
             <SizeInfo></SizeInfo>
+
+            <Useit></Useit>
 
             <Inquiry></Inquiry>
 

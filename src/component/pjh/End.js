@@ -13,7 +13,7 @@ function End(props) {
     }, [])
 
     return (
-        <div id={Style.footer} className="mt-5" data-aos="fade-top"
+        <div id={Style.footer} className="mt-10" data-aos="fade-top"
             data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <div className="container">
                 <div className={` ${Style.footer} position-relative d-flex justify-content-between align-items-center `}>

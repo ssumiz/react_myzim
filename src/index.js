@@ -2,13 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
-// CSS
-import './css/index.css';
-import './css/use.css';
-import './css/review.css';
-import './css/branch.css';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Component
@@ -17,7 +10,6 @@ import Main from './component/Main';
 import Footer from './component/Footer';
 
 // Data
-import data from './data/data.json'
 import Data from './data/data.json'
 
 // SCSS
@@ -41,7 +33,6 @@ root.render(
 
     <Head Data={Data}></Head>
 
-    {/* <Main datasrc={data}></Main> */}
     <Main Data={Data}></Main>
 
     <Footer Data={Data}></Footer>

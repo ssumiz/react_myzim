@@ -13,10 +13,10 @@ function Partner(props) {
 
     return (
         <>
-            <div id={Style.businessPartners}>
+            <div id={Style.businessPartners} className=" mt-10 mb-10">
                 <div className={`${Style.partnersTitle} mb-5`}>
                     <div className={Style.partnerLogo1}></div>
-                    <h1 className="personalColor">마이짐 서비스와 협력하는 파트너사</h1>
+                    <h1 className="personalColorBold">마이짐 서비스와 협력하는 파트너사</h1>
                 </div>
 
                 {/* 상단 스와이퍼  */}
