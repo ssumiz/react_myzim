@@ -6,7 +6,7 @@ import Style from "../../sass/jh/Inquiry.module.scss"
 
 function Inquiry(props) {
     return (
-        <div className={`${Style.bgColor} mt-10 mb-10`}>
+        <div className={`${Style.bgColor} mt-10 mb-10`} data-aos="fade-up" data-aos-duration="2000">
             <div className={`${Style.mContainer} mt-5 mb-5 container`}>
                 <div className="text-center pt-5">
                     <h1 className="personalColorBold">문의하기<ChatFill className="pb-2 ms-1"></ChatFill></h1>

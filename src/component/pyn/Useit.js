@@ -12,7 +12,7 @@ function Useit() {
         return () => clearInterval(intervalId);
     })
     return (
-        <div className={`${style.useit} container mtb-10`}>
+        <div className={`${style.useit} container mtb-10`} data-aos="fade-up" data-aos-duration="2000">
             <div className={`${style.dsc} text-center mb-5`}>
                 <p >
                     <h1 className={`${style.wrap} personalColorBold`}>사용방법</h1> <br />

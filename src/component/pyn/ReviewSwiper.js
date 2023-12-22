@@ -20,7 +20,7 @@ export default function App() {
     const [review, setreview] = useState(0);
     return (
         <>
-            <div className={`${style.reviewBanner} ${style.rel} mtb-15`}>
+            <div className={`${style.reviewBanner} ${style.rel} mtb-15`} data-aos="fade-up" data-aos-duration="3000">
                 <div className={style.txt_set}>
                     <h1 className="personalColorBold mb-10">보관 사이즈별 실제 이용후기.
                     </h1>

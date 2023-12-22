@@ -29,7 +29,10 @@ import 'aos/dist/aos.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
+
+
   <div >
+
 
     <Head Data={Data}></Head>
 

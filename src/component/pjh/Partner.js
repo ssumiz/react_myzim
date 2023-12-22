@@ -12,8 +12,8 @@ import Data from "../../data/data.json"
 function Partner(props) {
 
     return (
-        <>
-            <div id={Style.businessPartners} className=" mt-10 mb-10">
+        <div data-aos="fade-up" data-aos-duration="2000">
+            <div id={Style.businessPartners} className=" mt-10 mb-10 " >
                 <div className={`${Style.partnersTitle} mb-5`}>
                     <div className={Style.partnerLogo1}></div>
                     <h1 className="personalColorBold">마이짐 서비스와 협력하는 파트너사</h1>
@@ -135,7 +135,7 @@ function Partner(props) {
                 </Swiper>
 
             </div>
-        </>
+        </div>
     );
 }
 

@@ -13,7 +13,7 @@ function Branch() {
     const [branch, setbranch] = useState(0)
 
     return (
-        <div className="mtb-10">
+        <div className="mtb-10" data-aos="fade-up" data-aos-duration="2000">
 
             <div className='addressMap'>
                 <div className={`${style.intro} intro container text-center my-5 `}>
