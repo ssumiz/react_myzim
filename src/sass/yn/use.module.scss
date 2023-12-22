@@ -10,13 +10,13 @@
 
 .threeBanner {
 
-    border: 1px solid black;
-    border-radius: 2rem;
-    max-width: 1200px !important;
+    // border: 1px solid black;
+    // border-radius: 2rem;
+    min-width: 1200px !important;
 }
 
 .tabhead {
-    border-bottom: 1px solid black;
+    // border-bottom: 1px solid black;
 }
 
 
@@ -55,16 +55,30 @@
 }
 
 .tab_img {
-    width: 302px;
-    height: 302px;
+    width: 650px;
+    height: 650px;
 }
 
 .tab_span {
-    min-width: 360px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: italic;
+    word-break: keep-all;
+}
+
+.tab_subspan {
+    font-size: 2rem;
 }
 
 .tab_w {
-    max-width: 460px;
+    min-width: 850px;
+    box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+    border-radius: 40px 0 40px 0;
+    width: 50%;
+    margin-left: -50px;
+    background-color: #fff;
+    z-index: 999999;
+
 }
 
 

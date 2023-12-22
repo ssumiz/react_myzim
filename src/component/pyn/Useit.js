@@ -13,7 +13,7 @@ function Useit() {
     })
     return (
         <div className={`${style.useit} container mtb-10`} data-aos="fade-up" data-aos-duration="2000">
-            <div className={`${style.dsc} text-center mb-5`}>
+            <div className={`${style.dsc} container text-center mb-5`}>
                 <p >
                     <h1 className={`${style.wrap} personalColorBold`}>사용방법</h1> <br />
                     사용방법을 알려드립니다.
@@ -44,8 +44,8 @@ function Useit() {
                             <div className={`${style.tab_w} px-5`}>
                                 <span className={`${style.tab_span} mx-5 py-3 d-inline-block`}><strong>STEP {tabnm + 1}</strong>
                                 </span> <br />
-                                <span>{use.tab[tabnm].tabact.tabtext}</span> <br />
-                                <span>{use.tab[tabnm].tabact.tabtext2}</span>
+                                <span className={style.tab_subspan}>{use.tab[tabnm].tabact.tabtext}</span> <br />
+                                <span className={style.tab_subspan}>{use.tab[tabnm].tabact.tabtext2}</span>
                             </div>
 
                         </div>
