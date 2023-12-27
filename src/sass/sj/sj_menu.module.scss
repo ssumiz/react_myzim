@@ -1,7 +1,7 @@
 .headers {
     padding: 0 50px;
     position: relative;
-    z-index: 1;
+    z-index: 100000;
 }
 
 .headers .logo a {
@@ -26,7 +26,7 @@
 .mainmenu::after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: 100000;
     top: calc(100% + 1px);
     left: 0;
     right: 0;
@@ -47,7 +47,7 @@
     right: 0;
     text-align: center;
     display: unset;
-    z-index: 100000;
+    z-index: 100001;
     height: 0;
     overflow: hidden;
     transition: all .4s;
@@ -81,9 +81,5 @@
 
 .listbtn > i {
     font-size: 25px;
-}
-
-.fixed_menu {
-   
 }
 
