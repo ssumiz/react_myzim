@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom'
 
 import Button from "react-bootstrap/Button"
 import Modal from "react-bootstrap/Modal"
 
 import Style from "../../sass/jh/Popup.module.scss"
+import "../../sass/jh/Popup.scss"
 
-function Static(props) {
+function Popup(props) {
 
     const [isPop, setPop] = useState(true);
 
@@ -14,27 +16,22 @@ function Static(props) {
 
     return (
         <>
-            <div className="modal show" style={{ display: 'block', position: 'initial' }}>
+            <div className="modal show popupModal" style={{ display: 'block', position: 'initial' }}>
 
-                {/* <Button onClick={() => { showPop() }}>show</Button> */}
+                <Modal
+                    show={isPop}
+                    onHide={hidePop}
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                    className={Style.modal}
+                >
 
-                <Modal show={isPop}>
-
-                    <Modal.Header closeButton>
-                        <Modal.Title>
-
-                        </Modal.Title>
-                    </Modal.Header>
-
-                    <Modal.Body>
-                        <p>Modal body text goes here.</p>
-                        <Button onClick={() => { hidePop() }}>hide</Button>
+                    <Modal.Body className={Style.modalBody} >
+                        {/* <Link to="/">dd</Link> */}
+                        <img src="/img/pjh/popup/eventImg_1.png" alt="" style={{ borderRadius: "2%" }} />
+                        <Button onClick={() => { hidePop() }} >닫기</Button>
                     </Modal.Body>
 
-                    <Modal.Footer>
-                        <Button variant="dark">Close</Button>
-                        <Button variant="warning">Save Changes</Button>
-                    </Modal.Footer>
                 </Modal>
 
             </div>
@@ -42,4 +39,4 @@ function Static(props) {
     );
 }
 
-export default Static;
+export default Popup;

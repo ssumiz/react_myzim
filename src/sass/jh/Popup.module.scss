@@ -3,3 +3,13 @@
     left: 0;
     right: 0;
 }
+
+.modalBody {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10%;
+    transition: all 0.2s linear;
+}
+
