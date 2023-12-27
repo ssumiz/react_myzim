@@ -1,5 +1,6 @@
 .useit {
     padding: 5rem 0;
+
 }
 
 .dsc {
@@ -15,9 +16,7 @@
     min-width: 1200px !important;
 }
 
-.tabhead {
-    // border-bottom: 1px solid black;
-}
+
 
 
 
@@ -48,15 +47,20 @@
     border-style: solid;
     border-color: transparent;
     line-height: 35px;
+
 }
+
+
 
 .tab {
     display: none;
 }
 
 .tab_img {
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
+    box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+    border-radius: 40px 0 40px 0;
 }
 
 .tab_span {
@@ -64,23 +68,50 @@
     font-weight: bold;
     font-style: italic;
     word-break: keep-all;
+    color: red;
+
 }
 
 .tab_subspan {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .tab_w {
     min-width: 850px;
+    padding: 5rem 0;
     box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
     border-radius: 40px 0 40px 0;
     width: 50%;
     margin-left: -50px;
     background-color: #fff;
     z-index: 999999;
-
+    text-align: center;
 }
 
+.tabhead {
+    border: 3px solid #ccc;
+    box-shadow: 10px 10px 40px 5px rgb(0 0 0 / 20%);
+    border-radius: 40px 0 40px 0;
+    margin: 4rem 0;
+}
+
+.usebtn {
+    z-index: 200;
+    border-radius: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 2.8em 2rem;
+    max-height: 400px;
+    max-width: 400px;
+    background: #0091ff;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: -7%;
+    right: 10%;
+    text-align: left;
+    word-break: keep-all;
+}
 
 /*use css*/
 

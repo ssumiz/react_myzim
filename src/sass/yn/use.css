@@ -1,0 +1,29 @@
+.tabhead a:hover,
+.tabhead .act {
+  border-bottom-color: #0091ff !important;
+  /* font-size: 1.5rem;  */
+}
+
+.tabhead h4 {
+  font-size: 2rem;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 35px;
+}
+
+.act a {
+  color: #0091ff;
+}
+
+.usebtn h3 {
+  font-size: 2.5rem;
+}
+
+.usebtn p {
+  font-size: 1.8rem;
+}
+
+.personalColorBold {
+  font-size: 3rem;
+}

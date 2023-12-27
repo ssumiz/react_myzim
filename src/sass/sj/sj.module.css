@@ -1,0 +1,20 @@
+div.CutBanner {
+  background-color: #333;
+  height: 73.32px;
+  padding: 0 50px;
+}
+div.CutBanner h2 {
+  font-size: 18px;
+  color: #fff;
+}
+div.CutBanner div.rightmenu a {
+  color: #fff !important;
+}
+div.CutBanner div.rightmenu a:first-child {
+  display: inline-block;
+  margin-right: 15px;
+}
+div.CutBanner div.rightmenu a:last-child span {
+  display: inline-block;
+  text-indent: -9999em;
+}

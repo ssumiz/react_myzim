@@ -1,0 +1,42 @@
+div.header1 {
+  padding: 25px 0;
+}
+div.header1 .logo > a {
+  display: block;
+}
+div.header1 .top_nav .dropdown_select {
+  position: relative;
+}
+div.header1 .top_nav .dropdown_select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 1px;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+div.header1 .top_nav .dropdown_select > a::after {
+  content: "\f282";
+  font-family: "bootstrap-icons";
+  border: none;
+  vertical-align: 1px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+div.header1 .top_nav > a:first-of-type {
+  position: relative;
+}
+div.header1 .top_nav > a:first-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 1px;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}

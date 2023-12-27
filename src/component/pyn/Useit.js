@@ -15,8 +15,8 @@ function Useit() {
         <div className={`${style.useit} container mtb-10`} data-aos="fade-up" data-aos-duration="2000">
             <div className={`${style.dsc} container text-center mb-5`}>
                 <p >
-                    <h1 className={`${style.wrap} personalColorBold`}>사용방법</h1> <br />
-                    사용방법을 알려드립니다.
+                    <h1 className={`${style.wrap} personalColorBold`}>상담부터 계약까지 간편한 이용절차.</h1> <br />
+                    
                 </p>
             </div>
             <div className={`${style.threeBanner} container px-0`}>
@@ -53,7 +53,13 @@ function Useit() {
 
                 </div>
             </div>
+            <button className={`${style.usebtn} usebtn`}>
+                <h3>계약하러 가기 <i class="bi bi-book"></i></h3>
+                <p>자세한 내용 과 계약은 상담을 통해 알아보세요.
+                    <br></br> 친절한 상담 과 서비스를 약속드립니다.</p>
+            </button>
         </div>
+        
     )
 }
 
