@@ -1,0 +1,21 @@
+[
+    {
+        "num": "0",
+        "swiper2img" : "/img/sj_img/Slider_visual_1.jpg",
+        "swiper2alt" : "visual1",
+        "swiper2text" : "PERSONA I/기숙사 학생에게 더 행복을!/친구야 마이짐 같이 가자!"
+    },
+    {   
+        "num":"1",
+        "swiper2img" : "/img/sj_img/Slider_visual_2.jpg",
+        "swiper2alt" : "visual2",
+        "swiper2text" : "PERSONA II/캠핑족에게 좀 더 편안함을!/마이짐 브이로그"
+    },
+    {
+        "num":"2",
+        "swiper2img" : "/img/sj_img/Slider_visual_3.jpg",
+        "swiper2alt" : "visual3",
+        "swiper2text" : "PERSONA III/자녀들을 키우는 주부들을 위해/맘카페 배너 이벤트"
+    }
+
+]

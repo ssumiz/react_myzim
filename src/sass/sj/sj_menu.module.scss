@@ -73,13 +73,18 @@
     height: 3px;
 }
 
-.listbtn {
-    background-color: #313131;
+.hammenu {
+    background-color: black;
     border: none;
-    padding: 0 8px;
+    height: 100%;
 }
 
-.listbtn > i {
+.hammenu > i {
     font-size: 25px;
+}
+
+.mobile {
+    z-index: 100003;
+    color: white;
 }
 
