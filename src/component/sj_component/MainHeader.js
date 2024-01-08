@@ -49,7 +49,7 @@ const MainHeader = () => {
                     <NavDropdown.Item href="#action/3.2">ENG</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="로그인" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">로그인</NavDropdown.Item>
+                    <NavDropdown.Item href="/Login">로그인</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="회원가입" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">회원가입</NavDropdown.Item>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState,useEffect, useRef } from 'react';
 import slidesass from '../../sass/sj/sj_slide.module.scss';
 
 import 'swiper/css';
@@ -18,13 +17,18 @@ const Slider = () => {
     const Paginate = {
         clickable: true,
         renderBullet: function (i,className) {
-           return `<div class=${className}><div class="text-wrap"><div>${swiperdata2[i].swiper2text.split('/')[0]}</div><div>${swiperdata2[i].swiper2text.split('/')[1]}</div><div>${swiperdata2[i].swiper2text.split('/')[2]}</div></div></div>`
-        },
+           return `<div class="${className}">
+                        ${swiperdata2[i].swiper2text.split('/').map((하나,둘)=>{
+                            return(
+                                `<div className="text-wrap" key=${둘}>
+                                    <div>${하나}</div>
+                                </div>`)})} </div>`
+        }
     };
 
     
     return (
-        <div className={`${slidesass.allswiper} d-flex`}>
+        <div className={`${slidesass.allswiper} d-flex firstslide`}>
             <Swiper dir="rtl" navigation={true} pagination={{clickable: true,}} modules={[Navigation,Pagination]} className={`${slidesass.swiper1} col-5`}>
                 {
                     swiperdata.map((el,idx)=>{

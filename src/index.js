@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // React-Router-Dom
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 // CSS
 import './css/index.css';
@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from './component/Head';
 import Main from './component/Main';
 import Footer from './component/Footer';
+import Login from './component/sj_component/Login'
 
 // Data
 import data from './data/data.json'
@@ -41,7 +42,10 @@ root.render(
     <Head Data={Data}></Head>
 
     {/* <Main datasrc={data}></Main> */}
-    <Main Data={Data}></Main>
+    <Routes>
+      <Route path="/" element={<Main Data={Data}></Main>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
+    </Routes>
 
     <Footer Data={Data}></Footer>
 
