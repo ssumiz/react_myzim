@@ -17,12 +17,7 @@ const Slider = () => {
     const Paginate = {
         clickable: true,
         renderBullet: function (i,className) {
-           return `<div class="${className}">
-                        ${swiperdata2[i].swiper2text.split('/').map((하나,둘)=>{
-                            return(
-                                `<div className="text-wrap" key=${둘}>
-                                    <div>${하나}</div>
-                                </div>`)})} </div>`
+           return "<div class="+className+">"+swiperdata2[i].swiper2text.split('/').map((하나,둘)=>하나)+"</div>"
         }
     };
 
