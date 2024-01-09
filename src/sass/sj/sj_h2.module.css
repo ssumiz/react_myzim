@@ -1,0 +1,48 @@
+.mainmenu {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.mainmenu:hover {
+  color: #ff000f !important;
+}
+
+.mainmenu:hover .smenu {
+  display: flex !important;
+}
+
+.mainmenu:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -1000%;
+  right: -1000%;
+  height: 68%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 100000;
+}
+
+.smenu {
+  top: 100%;
+  left: 30px;
+  right: 0;
+  z-index: 100001;
+}
+
+.smenu > a:first-child {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+  padding-right: 20px;
+}
+
+.smenu > a:last-child {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+  padding-left: 20px;
+}

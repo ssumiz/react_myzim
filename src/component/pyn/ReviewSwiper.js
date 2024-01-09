@@ -31,15 +31,12 @@ export default function App() {
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3500,
                         disableOnInteraction: false,
                     }}
                     effect={'fade'}
-                    navigation={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Autoplay, EffectFade, Navigation, Pagination]}
+                  
+                    modules={[Autoplay, EffectFade]}
                     className={`${style.reviewBanner}`}
                 >
 
@@ -82,12 +79,7 @@ export default function App() {
 
 
                 </Swiper>
-                <div className={style.btns}>
-                    <div className={`${style.p_unset} swiper-pagination`}></div>
-                    <a href="#none" title='더보기'>
-                        <i className='bi bi-plus-lg'></i>
-                    </a>
-                </div>
+              
                 <button className={`${style.tbox_right} all review_btn`}>
                     <p className={style.title0}>
                         VIEW MORE
