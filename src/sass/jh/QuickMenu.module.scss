@@ -78,7 +78,11 @@
 
     .quickMenu {
 
+        position: fixed;
+
         display: flex;
+
+        flex-direction: row;
 
         bottom: 0;
         left: 0;
@@ -87,7 +91,21 @@
         .linkPhone,
         .linkKaKaoTalk {
             width: 50vw;
+            height: 7.5rem;
             border-radius: 0;
+        }
+
+        .linkPhone:hover {
+            transform: scale(1.0);
+        }
+
+        .linkKaKaoTalk:hover {
+            transform: scale(1.0);
+        }
+
+        .linkTop{
+            display: none;
+            
         }
     }
 }

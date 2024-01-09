@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+
+// React-Router-Dom
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
+// CSS
+import './css/index.css';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from './component/Head';
 import Main from './component/Main';
 import Footer from './component/Footer';
+import Login from './component/sj_component/Login'
 
 // Data
 import Data from './data/data.json'
@@ -29,18 +36,19 @@ import 'aos/dist/aos.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-
-
-  <div >
-
+  <BrowserRouter>
 
     <Head Data={Data}></Head>
 
-    <Main Data={Data}></Main>
+    {/* <Main datasrc={data}></Main> */}
+    <Routes>
+      <Route path="/" element={<Main Data={Data}></Main>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
+    </Routes>
 
     <Footer Data={Data}></Footer>
 
-  </div>
+  </BrowserRouter>
 );
 
 

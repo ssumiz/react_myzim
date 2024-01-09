@@ -1,0 +1,14 @@
+[
+    {
+        "mainimg": "/img/sj_img/region_01.jpg",
+        "alt": "region01",
+        "region": "서울 지점 논현점",
+        "address": "서울 특별시 강남구 강남대로 132길 29, 금강빌딩 지하 2층"
+    },
+    {
+        "mainimg": "/img/sj_img/region_02.jpg",
+        "alt": "region02",
+        "region": "서울 지점 삼성점",
+        "address": "서울특별시 강남구 강남대로132길 29, 금강빌딩 지하 2층"
+    }
+]
