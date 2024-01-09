@@ -28,6 +28,7 @@ function Main(props) {
             <Inquiry></Inquiry>
 
             <Partner></Partner>
+            
         </div>
     );
 }

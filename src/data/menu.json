@@ -1,7 +1,7 @@
 [
     {
-        "menu1": "회사 소개",
-        "href": "#none",
+        "menu1": "서비스 소개",
+        "href": "/serviceInfo",
         "isSub": "true",
         "d2": [
             {

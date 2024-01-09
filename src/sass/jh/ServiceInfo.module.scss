@@ -1,0 +1,14 @@
+.Main{
+
+    margin:0, 200px ;
+    width:auto;
+    height:50vh;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+}
+
+.Main>img{
+    object-fit: cover;
+}

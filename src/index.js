@@ -15,6 +15,7 @@ import Head from './component/Head';
 import Main from './component/Main';
 import Footer from './component/Footer';
 import Login from './component/sj_component/Login'
+import ServiceInfo from './component/pjh/ServiceInfo';
 
 // Data
 import Data from './data/data.json'
@@ -44,6 +45,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Main Data={Data}></Main>}></Route>
       <Route path="/login" element={<Login></Login>}></Route>
+      <Route path="/serviceInfo" element={<ServiceInfo></ServiceInfo>}></Route>
     </Routes>
 
     <Footer Data={Data}></Footer>

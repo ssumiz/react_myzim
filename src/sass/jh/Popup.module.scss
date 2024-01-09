@@ -13,3 +13,17 @@
     transition: all 0.2s linear;
 }
 
+.checkBox{
+    cursor: pointer;
+    text-align : right;
+    margin-top: 10px;
+    font-weight: 2rem;
+
+   
+
+}
+
+.checkBox:hover{
+    color: red;
+    opacity: 0.75;
+}
