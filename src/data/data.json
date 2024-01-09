@@ -186,7 +186,7 @@
             "region_number": "02",
             "review_title": "편리한 캠핑생활를 위해 편안창고 장기계약 했어요",
             "review_detail": "그 동안 차에 싣고 다녀서 여간 불편한게 아니었는데 ",
-            "review_detail2":"365일 24시간 언제든 출입할 수 있고 보관상태도 좋아서 캠핑생활도 일상생활도 만족감이 올라갔어요",
+            "review_detail2": "365일 24시간 언제든 출입할 수 있고 보관상태도 좋아서 캠핑생활도 일상생활도 만족감이 올라갔어요",
             "review_hashtag": "# 캠핑,# 캠핑창고,# 캠핑장비",
             "review_img_src": "/img/cho/camping.jpg",
             "review_write_date": "2023-12-05"
@@ -270,7 +270,7 @@
             "size_explain": "우체국 5호 박스 20개~24개",
             "size_price": "월 6만원 부터",
             "size_purpose": "1~2인 가구 짐 보관",
-            "size_img_src": "img/yong/Small.jpg"
+            "size_img_src": "img/yong/Small.png"
         },
         {
             "size_name": "Medium",
@@ -284,7 +284,7 @@
             "size_explain": "우체국 5호 박스 54~72개",
             "size_price": "월 20만원 부터",
             "size_purpose": "소형이사,기업창고,미술품보관 ",
-            "size_img_src": "img/yong/Large.jpg"
+            "size_img_src": "img/yong/Large.png"
         }
     ],
     "user_form": [

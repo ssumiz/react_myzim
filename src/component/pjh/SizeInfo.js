@@ -32,79 +32,83 @@ function SizeInfo(props) {
     };
 
     return (
-        <div id="sizeInfo">
-            <div className={`container mb-5 mt-5 ${Style.containerHeight}`} data-aos="fade-up" data-aos-duration="2000">
-                <div className="text-center pt-5">
-                    <h1 className="personalColorBold">사이즈 안내</h1>
-                    <p className="mt-3 mb-5">가장 적합한 사이즈를 선택해보세요.</p>
-                </div>
-                <div className={`d-flex justify-content-center ${Style.swiperHeight}`}>
-                    <Swiper
+        <div className={`personalColorBg mt-10 mb-10`} data-aos="fade-up" data-aos-duration="2000">
+            <div id="sizeInfo">
+                <div className={`container mb-5 mt-5 ${Style.containerHeight}`}>
+                    <div className="text-center pt-5">
+                        <h1 className="personalColorBold">사이즈 안내</h1>
+                        <p className="mt-3 mb-5">가장 적합한 사이즈를 선택해보세요.</p>
+                    </div>
+                    <div className={`d-flex justify-content-center ${Style.swiperHeight}`}>
+                        <Swiper
 
-                        centeredSlides={true}
-                        spaceBetween={50}
-                        loop={true}
-                        slidesPerView={1}
-                        // speed={5000}
-                        autoHeight={true}
-                        loopAdditionalSlides={1}
+                            centeredSlides={true}
+                            spaceBetween={50}
+                            loop={true}
+                            slidesPerView={1}
+                            // speed={5000}
+                            autoHeight={true}
+                            loopAdditionalSlides={1}
 
-                        effect={"fade"}
-                        fadeEffect={{
-                            crossFade: false, // Enable cross fade transition
-                        }}
+                            effect={"fade"}
+                            fadeEffect={{
+                                crossFade: false, // Enable cross fade transition
+                            }}
 
-                        onSlideChange={handleSlideChange}
-
-
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                            stopOnLastSlide: false
-                        }}
-
-                        pagination={pagination}
-                        modules={[Autoplay, EffectFade, Pagination]}
-                        className={`${Style.swiper}`}
-                    >
-
-                        {Data.size_info.map((value, idx) => {
-                            // Mini , Small , Medium , Large
-                            return (<SwiperSlide className={`{Style.swiperSlide} fade-transition`} key={`Slide${idx}`} >
-                                <img src={value.size_img_src} alt={""} className={Style.swiperSlide} />
-                            </SwiperSlide>)
+                            onSlideChange={handleSlideChange}
 
 
-                        })
-                        }
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                stopOnLastSlide: false
+                            }}
 
-                    </Swiper>
+                            pagination={pagination}
+                            modules={[Autoplay, EffectFade, Pagination]}
+                            className={`${Style.swiper}`}
+                        >
 
-                    <div className="position-absolute d-flex flex-column align-items-center pt-5 dataPos">
+                            {Data.size_info.map((value, idx) => {
+                                // Mini , Small , Medium , Large
+                                return (<SwiperSlide className={`{Style.swiperSlide} fade-transition`} key={`Slide${idx}`} >
+                                    <img src={value.size_img_src} alt={""} className={Style.swiperSlide} />
+                                </SwiperSlide>)
 
-                        <ul className="pt-3 fs-5">
-                            <li className="mb-5">
-                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 사이즈명 </span>
-                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_name}</span>
-                            </li>
-                            <li className="mb-5">
-                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 용도 </span>
-                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_purpose}</span>
-                            </li>
-                            <li className="mb-5">
-                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 가격 </span>
-                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_price}</span>
-                            </li>
-                            <li className="mb-5">
-                                <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 구성 </span>
-                                <span className="subject__con col-7">{Data.size_info[activeIdx].size_explain}</span>
-                            </li>
-                        </ul>
+
+                            })
+                            }
+
+                        </Swiper>
+
+                        <div className="position-absolute d-flex flex-column align-items-center pt-5 dataPos">
+                            <div className="sizeText d-flex flex-column align-items-center justify-content-center">
+                                <ul className="pt-3 pb-3">
+                                    <li className="mb-5">
+                                        <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 사이즈명 </span>
+                                        <span className="subject__con col-7">{Data.size_info[activeIdx].size_name}</span>
+                                    </li>
+                                    <li className="mb-5">
+                                        <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 용도 </span>
+                                        <span className="subject__con col-7">{Data.size_info[activeIdx].size_purpose}</span>
+                                    </li>
+                                    <li className="mb-5">
+                                        <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 가격 </span>
+                                        <span className="subject__con col-7">{Data.size_info[activeIdx].size_price}</span>
+                                    </li>
+                                    <li className="">
+                                        <span className="subject col-5 me-5"><CaretRightFill></CaretRightFill> 구성 </span>
+                                        <span className="subject__con col-7">{Data.size_info[activeIdx].size_explain}</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
                     </div>
 
+
                 </div>
-
-
             </div>
         </div>
     );
