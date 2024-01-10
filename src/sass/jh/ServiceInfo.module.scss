@@ -1,14 +1,128 @@
 .Main{
 
-    margin:0, 200px ;
-    width:auto;
-    height:50vh;
-
-    background-size: contain;
-
+    width:100%;
+    height:320px;
+    overflow: hidden;
+    max-height: 320px;
+    align-items: center;
     background-repeat: no-repeat;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.Main>img{
-    object-fit: cover;
+.MainImg{
+    margin-top: 200px;
+    width:100vw;
+    height:450px;
+    background:url(https://cdn.myzzym.com/myzzym/images/home/header/myzzym-main.jpg) 63% 30% / cover no-repeat;
+    // background-size: contain;
+
+}
+
+
+
+.index{
+    background-color: #dadada;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.explain{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    
+    text-align: left;
+
+    height:1000px;
+}
+
+.imgCover{
+    width:60%;
+    height:320px;
+    overflow: hidden;
+    max-height: 320px;
+    align-items: center;
+}
+
+.explainImg1{
+    height:100%;
+    background:url(https://cdn.myzzym.com/myzzym/images/home/myzzym-main-05.png) 0% 0% / cover no-repeat;
+    background-size: contain;
+}
+
+.explainTxt{
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+}
+
+.explainImg2{
+    height:100%;
+    background:url(https://cdn.myzzym.com/myzzym/images/home/myzzym-main-04.png) 0% 0% / cover no-repeat;
+    background-size: contain;
+}
+
+.liStyle1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+    width : 80vw;
+    
+    gap: 50px;
+    
+}
+
+.liStyle2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+    width : 80vw;
+    
+    gap: 50px;
+    
+}
+
+@media (max-width: 768px) {
+
+
+    .liStyle1{
+
+        flex-direction: column;
+    }
+
+    .liStyle2{
+
+        flex-direction: column-reverse;
+    }
+
+    .imgCover{
+
+        height:160px;
+    }
+
+    .styleH2{
+
+        font-size: 25px;
+    }
+
 }
