@@ -173,3 +173,36 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+
+    .styleTitle{
+        font-size: xx-large !important;
+    }
+
+    .columFrame{
+        width:200px;
+    }
+
+    .mContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .styleDiv{
+
+        
+    }
+
+    .styleContent{
+
+        display: inline-block;
+        margin-right: 30px;
+        width: 75px;
+        box-sizing: unset;
+        margin-bottom: 10px;
+    }
+}

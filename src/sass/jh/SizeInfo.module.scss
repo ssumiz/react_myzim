@@ -20,3 +20,17 @@
 .swiperHeight {
     height: 900px;
 }
+
+
+@media (max-width: 768px) {
+ 
+    .styleTitle{
+        font-size: xx-large !important;
+    }
+
+    .swiperSlide{
+
+        width:400px !important;
+        height: auto !important;
+    }
+}

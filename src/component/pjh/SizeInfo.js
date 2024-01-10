@@ -36,7 +36,7 @@ function SizeInfo(props) {
             <div id="sizeInfo">
                 <div className={`container mb-5 mt-5 ${Style.containerHeight}`}>
                     <div className="text-center pt-5">
-                        <h1 className="personalColorBold">사이즈 안내</h1>
+                        <h1 className={`${Style.styleTitle} personalColorBold`}>사이즈 안내</h1>
                         <p className="mt-3 mb-5">가장 적합한 사이즈를 선택해보세요.</p>
                     </div>
                     <div className={`d-flex justify-content-center ${Style.swiperHeight}`}>
@@ -71,7 +71,8 @@ function SizeInfo(props) {
 
                             {Data.size_info.map((value, idx) => {
                                 // Mini , Small , Medium , Large
-                                return (<SwiperSlide className={`{Style.swiperSlide} fade-transition`} key={`Slide${idx}`} >
+                                // return (<SwiperSlide className={`{Style.swiperSlide} fade-transition`} key={`Slide${idx}`} >
+                                return (<SwiperSlide className={`${Style.swiperSlide} fade-transition`} key={`Slide${idx}`} >
                                     <img src={value.size_img_src} alt={""} className={Style.swiperSlide} />
                                 </SwiperSlide>)
 
