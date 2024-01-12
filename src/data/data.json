@@ -343,22 +343,34 @@
     ],
     "event_info": [
         {
+            "event_index": 0,
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/31/promotion_ko_img",
+            "event_text": "수원광교점 오픈 프로모션 30% 할인"
+        },
+        {
             "event_index": 1,
-            "event_start": 20231201,
-            "event_end": 20231214,
-            "event_title": "신규회원 가입 이벤트",
-            "event_img_src": "./img/event1.png",
-            "event_detail": "회원가입시 , 30% 할인 쿠폰을 드립니다.",
-            "event_run": 0
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/29/promotion_ko_img",
+            "event_text": "레저용품 보관! 제주함덕해수욕장 오픈 이벤트"
         },
         {
             "event_index": 2,
-            "event_start": 20231201,
-            "event_end": 20231214,
-            "event_title": "지인 초대 이벤트",
-            "event_img_src": "./img/event2.png",
-            "event_detail": "주변 지인 초대하고, 50% 할인 쿠폰 받자!.",
-            "event_run": 1
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/27/promotion_ko_img",
+            "event_text": "전 사이즈 3만원! 제주대학병원점 오픈 프로모션"
+        },
+        {
+            "event_index": 3,
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/26/promotion_ko_img",
+            "event_text": "제주연동점 오픈 특가 착한 가격 전 사이즈 3만원"
+        },
+        {
+            "event_index": 4,
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/21/promotion_ko_img",
+            "event_text": "풍납동점 신규 고객 90일 50% 할인"
+        },
+        {
+            "event_index": 5,
+            "event_imgSrc": "https://boxful-b2c-test-bucket.s3.ap-northeast-2.amazonaws.com/promotion/11/promotion_ko_img",
+            "event_text": "첫 고객 설레는 할인전! 셀프 공유창고 지점별 할인"
         }
     ],
     "faq_info": [

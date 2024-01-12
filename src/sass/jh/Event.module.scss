@@ -1,0 +1,20 @@
+.container{
+
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+}
+
+.innerContainer{
+    width: 70vw;
+    height: fit-content;
+
+}

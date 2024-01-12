@@ -16,6 +16,7 @@ import Main from './component/Main';
 import Footer from './component/Footer';
 import Login from './component/sj_component/Login'
 import ServiceInfo from './component/pjh/ServiceInfo';
+import Event from './component/pjh/Event';
 
 // Data
 import Data from './data/data.json'
@@ -46,6 +47,7 @@ root.render(
       <Route path="/" element={<Main Data={Data}></Main>}></Route>
       <Route path="/login" element={<Login></Login>}></Route>
       <Route path="/serviceInfo" element={<ServiceInfo></ServiceInfo>}></Route>
+      <Route path="/event" element={<Event></Event>}></Route>
     </Routes>
 
     <Footer Data={Data}></Footer>
