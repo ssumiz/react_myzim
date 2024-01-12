@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect }from 'react';
 import slidesass from '../../sass/sj/sj_slide.module.scss';
 
 import 'swiper/css';
@@ -9,41 +9,74 @@ import 'swiper/css/scrollbar';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Scrollbar } from 'swiper/modules';
+import { Controller } from 'swiper/modules';
 import swiperdata from '../../data/swiper1.json';
 import swiperdata2 from '../../data/swiper2.json';
 
+const { kakao } = window;
+
 const Slider = () => {
+function Kakao() {
+
+    useEffect(()=> {
+        const container = document.getElementById('map');
+        const options = {
+            center: new kakao.maps.LatLng(33.450701,126.570667),
+            level: 3
+        };
+        const map = new kakao.maps.Map(container,options);
+    },[])
+}
+    const [controlledSwiper,setcontrolledSwiper] = useState(null);
 
     const Paginate = {
         clickable: true,
         renderBullet: function (i,className) {
            return `<div class="${className}">
-                        ${swiperdata2[i].swiper2text.split('/').map((하나,둘)=>{
-                            return(
-                                `<div className="text-wrap" key=${둘}>
-                                    <div>${하나}</div>
-                                </div>`)})} </div>`
+                    <div class="text-wrap">
+                        <div>${swiperdata2[i].swiper2text.split('/')[0]}</div>
+                        <div>${swiperdata2[i].swiper2text.split('/')[1]}</div>
+                        <div>${swiperdata2[i].swiper2text.split('/')[2]}</div>
+                    </div>
+                  </div>`
         }
     };
 
     
     return (
         <div className={`${slidesass.allswiper} d-flex firstslide`}>
-            <Swiper dir="rtl" navigation={true} pagination={{clickable: true,}} modules={[Navigation,Pagination]} className={`${slidesass.swiper1} col-5`}>
-                {
-                    swiperdata.map((el,idx)=>{
-                        return(
-                            <SwiperSlide key={idx} className={`${slidesass.newswiperslide}` }>
-                                <img src={el.mainimg} alt={el.alt}></img>
-                                <div>
-                                    <h2>{el.region}</h2>
-                                    <h3>{el.address}</h3>              
-                                </div>
-                            </SwiperSlide>
-                        );
-                    })
-                }
-            </Swiper>
+            <div className={`${slidesass.swiperone} col-5 d-flex`}>
+                <Swiper navigation={true} modules={[Navigation,Controller,Pagination]} className={`${slidesass.swiperoneswiper} col-6 swiper11`} controller={{control:controlledSwiper}}>
+                    {
+                        swiperdata.map((첫,둘)=>{
+                            return(
+                                <>
+                                    <SwiperSlide key={둘} className={`${slidesass.swiperoneslide}`}>
+                                        <img src={첫.mainimg} alt={첫.alt}></img>
+                                    </SwiperSlide>
+                                </>
+                            )
+                        })
+                    }
+                </Swiper>
+                <Swiper className={`${slidesass.swiperoneto} onlyswiper`} modules={[Pagination,Controller]} onSwiper={setcontrolledSwiper}>
+                    {
+                        swiperdata.map((셋,넷)=>{
+                            return(
+                                <>
+                                    <SwiperSlide key={넷} className={`${slidesass.swiperonetoslide}`}>
+                                        <div className={`${slidesass.texterwrap}`}>
+                                            <h2>{셋.region}</h2>
+                                            <p>{셋.address}</p>
+                                        </div>
+                                        <div id="map" style={{width:'500px', height:'500px'}}></div>
+                                    </SwiperSlide>
+                                </>
+                            )
+                        })
+                    }
+                </Swiper>
+            </div>
             <div className={`${slidesass.swipertwo} col-7`}>
                 <div className={`${slidesass.twotitle}`}>
                     <h2>PERSONA</h2>
