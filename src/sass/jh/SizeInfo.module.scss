@@ -33,4 +33,29 @@
         width:400px !important;
         height: auto !important;
     }
+
+    .swiperHeight{
+
+        flex-direction: column;
+
+        height:500px;
+    }
+
+    .posDetail{
+
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: unset !important;
+
+        margin-bottom: 5%;
+
+        font-size: small;
+    }
+
+    .containerHeight{
+        height: 1100px;
+    }
+
+    
 }

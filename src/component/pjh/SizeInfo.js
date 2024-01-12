@@ -82,7 +82,7 @@ function SizeInfo(props) {
 
                         </Swiper>
 
-                        <div className="position-absolute d-flex flex-column align-items-center pt-5 dataPos">
+                        <div className={`${Style.posDetail} position-absolute d-flex flex-column align-items-center pt-5 dataPos`}>
                             <div className="sizeText d-flex flex-column align-items-center justify-content-center">
                                 <ul className="pt-3 pb-3">
                                     <li className="mb-5">

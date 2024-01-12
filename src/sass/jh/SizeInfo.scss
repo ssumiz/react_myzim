@@ -68,4 +68,28 @@
     }
 
 
+
+    @media (max-width: 768px) {
+
+        .swiper-pagination {
+
+            width:100% !important;
+
+        }
+
+        .swiper-pagination-bullet {
+
+            width: 50px;
+
+        }
+
+        .sizeText{
+            padding-top: 0;
+            width: 23rem;
+            height: 23rem;
+            font-size:1.0rem;
+
+        }
+
+    }
 }
