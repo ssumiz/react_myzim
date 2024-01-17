@@ -18,7 +18,7 @@
 
    
    * 박정환 : Footer , Business Partner, 사이즈 정보, 퀵메뉴
-   * 박용남 : 지점 안내 ( GPS ) , 리뷰 관리 
+   * 박용남 : 지점 안내 ( GPS ) , 리뷰 관리 , 사용방법안내
    * 김세중 : UI/UX 디자인 , Header , 메인슬라이드 , 회원가입 기능
 
 
@@ -41,6 +41,8 @@
 
  -  Server : Node.js
 
+3-1 리액트 사용툴
+![image](https://github.com/ssumiz/react_myzim.github.io/assets/146901772/3e02964f-2de3-4810-a9c8-18f5849e87bb)
 
 
 ---
